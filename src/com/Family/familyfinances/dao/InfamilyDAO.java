@@ -89,6 +89,12 @@ public class InfamilyDAO {
 					(Object[]) ids);
 		}
 	}
+	/**
+	 * 获取收入信息
+	 * @param start起始位置
+	 * @param count每页显示数量
+	 * @return
+	 */
 	public List<Tb_Infamily> getScrollData(int start, int count) {
 		List<Tb_Infamily> tb_Infamily = new ArrayList<Tb_Infamily>();
 		db = helper.getWritableDatabase();
@@ -106,6 +112,10 @@ public class InfamilyDAO {
 		}
 		return tb_Infamily;
 	}
+	/**
+	 * 获取总记录数
+	 * @return
+	 */
 	public long getCount() {
 		db = helper.getWritableDatabase();
 		Cursor cursor = db
@@ -116,6 +126,10 @@ public class InfamilyDAO {
 		}
 		return 0;
 	}
+	/**
+	 * 获取收入最大编号
+	 * @return
+	 */
 	public int getMaxId() {
 		db = helper.getWritableDatabase();
 		Cursor cursor = db.rawQuery("select max(_id) from tb_Infamily", null);

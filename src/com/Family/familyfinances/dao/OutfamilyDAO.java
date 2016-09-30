@@ -91,6 +91,12 @@ public class OutfamilyDAO {
 					(Object[]) ids);
 		}
 	}
+	/**
+	 * 获取支出信息
+	 * @param start起始位置
+	 * @param count每页显示数量
+	 * @return
+	 */
 	public List<Tb_Outfamily> getScrollData(int start, int count) {
 		List<Tb_Outfamily> tb_outaccount = new ArrayList<Tb_Outfamily>();
 		db = helper.getWritableDatabase();
@@ -108,6 +114,10 @@ public class OutfamilyDAO {
 		}
 		return tb_outaccount;
 	}
+	/**
+	 * 获取总记录数
+	 * @return
+	 */
 	public long getCount() {
 		db = helper.getWritableDatabase();
 		Cursor cursor = db.rawQuery("select count(_id) from tb_Outfamily",
@@ -118,6 +128,10 @@ public class OutfamilyDAO {
 		}
 		return 0;
 	}
+	/**
+	 * 获取支出最大编号
+	 * @return
+	 */
 	public int getMaxId() {
 		db = helper.getWritableDatabase();
 		Cursor cursor = db.rawQuery("select max(_id) from tb_Outfamily", null);
