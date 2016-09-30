@@ -24,7 +24,6 @@ public class Login extends Activity {
 		txtpwd = (EditText)findViewById(R.id.txtPwd);
 		txtlogin = (EditText)findViewById(R.id.txtLogin);
 		btnlogin = (Button)findViewById(R.id.btnLogin);
-		btnclose = (Button)findViewById(R.id.btnClose);
 		btnupdate = (Button)findViewById(R.id.btnUpdate);
 		btnzhuce = (Button)findViewById(R.id.btnAdd);
 
@@ -55,11 +54,11 @@ public class Login extends Activity {
 			}
 		});
         //退出程序
-		btnclose.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View arg0) {
-				finish();
-			}
-		});
+//		btnclose.setOnClickListener(new OnClickListener() {
+//			@Override
+//			public void onClick(View arg0) {
+//				finish();
+//			}
+//		});
 	}
 }

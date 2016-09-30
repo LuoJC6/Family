@@ -7,6 +7,7 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.view.PagerAdapter;
@@ -16,12 +17,18 @@ import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TabHost;
+import android.widget.TabHost.TabSpec;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
    
 	private TabHost tabHost;
+	private RadioGroup radiogroup;
+	private RadioButton ShouY,GeRYY,GeRSZ;
 	@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,13 +37,27 @@ public class MainActivity extends Activity {
         tabHost = (TabHost)findViewById(android.R.id.tabhost);
         tabHost.setup();
         
+        radiogroup = (RadioGroup)findViewById(R.id.radiogroup);
+        ShouY = (RadioButton)findViewById(R.id.ShouY);
+        GeRYY = (RadioButton)findViewById(R.id.GeRYY);
+        GeRSZ = (RadioButton)findViewById(R.id.GeRSZ);
+        
+        
         LayoutInflater infater = LayoutInflater.from(this);
         infater.inflate(R.layout.activity_first, tabHost.getTabContentView());
+        infater.inflate(R.layout.activity_geryy, tabHost.getTabContentView());
         infater.inflate(R.layout.login, tabHost.getTabContentView());
         
         tabHost.addTab(tabHost.newTabSpec("tab01").setIndicator("首页").setContent(R.id.first));
-        tabHost.addTab(tabHost.newTabSpec("tab02").setIndicator("个人应用").setContent(R.id.ces));
+        tabHost.addTab(tabHost.newTabSpec("tab02").setIndicator("个人应用").setContent(R.id.geryy));
+        tabHost.addTab(tabHost.newTabSpec("tab03").setIndicator("系统设置").setContent(R.id.ces));
+
+        //设置监听事件
+        checkListener checkradio = new checkListener();
+        radiogroup.setOnCheckedChangeListener(checkradio);
         
+        /**
+         * 图片轮播*/
         mViewPaper = (ViewPager) findViewById(R.id.vp);
 		
 		//显示的图片
@@ -46,6 +67,9 @@ public class MainActivity extends Activity {
 			imageView.setBackgroundResource(imageIds[i]);
 			images.add(imageView);
 		}
+
+
+		
 		//显示的小点
 		dots = new ArrayList<View>();
 		dots.add(findViewById(R.id.dot_0));
@@ -183,4 +207,27 @@ public class MainActivity extends Activity {
 	        	"新婚购房后如何家庭理财",
 	        	"家庭理财,投资 理财 ,项目投资"
 	        };
+	    public class checkListener implements OnCheckedChangeListener{
+	        @Override
+	        public void onCheckedChanged(RadioGroup group, int checkedId) {
+	            // TODO Auto-generated method stub
+	            //setCurrentTab 通过标签索引设置当前显示的内容
+	            //setCurrentTabByTag 通过标签名设置当前显示的内容
+	            switch(checkedId){
+	            case R.id.ShouY:
+	                tabHost.setCurrentTab(0);
+	                //或
+	                //tabhost.setCurrentTabByTag("tag1");
+	                break;
+	            case R.id.GeRYY:
+	            	tabHost.setCurrentTab(1);
+	                break;
+	            case R.id.GeRSZ:
+	            	tabHost.setCurrentTab(2);
+	                break;
+	            }
+
+	            
+	        }
+	    }
 }
