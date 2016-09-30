@@ -32,10 +32,10 @@ public class MainActivity extends Activity {
         
         LayoutInflater infater = LayoutInflater.from(this);
         infater.inflate(R.layout.activity_first, tabHost.getTabContentView());
-        infater.inflate(R.layout.activity_geryy, tabHost.getTabContentView());
+        infater.inflate(R.layout.login, tabHost.getTabContentView());
         
         tabHost.addTab(tabHost.newTabSpec("tab01").setIndicator("首页").setContent(R.id.first));
-        tabHost.addTab(tabHost.newTabSpec("tab02").setIndicator("个人应用").setContent(R.id.geryy));
+        tabHost.addTab(tabHost.newTabSpec("tab02").setIndicator("个人应用").setContent(R.id.ces));
         
         mViewPaper = (ViewPager) findViewById(R.id.vp);
 		

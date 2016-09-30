@@ -14,17 +14,28 @@ public final class R {
         public static final int a=0x7f020000;
         public static final int b=0x7f020001;
         public static final int beij=0x7f020002;
-        public static final int c=0x7f020003;
-        public static final int d=0x7f020004;
-        public static final int dot_focused=0x7f020005;
-        public static final int dot_normal=0x7f020006;
-        public static final int e=0x7f020007;
-        public static final int ic_item=0x7f020008;
-        public static final int ic_launcher=0x7f020009;
+        public static final int bj=0x7f020003;
+        public static final int c=0x7f020004;
+        public static final int clr_normal=0x7f02000c;
+        public static final int clr_pressed=0x7f02000d;
+        public static final int d=0x7f020005;
+        public static final int dot_focused=0x7f020006;
+        public static final int dot_normal=0x7f020007;
+        public static final int e=0x7f020008;
+        public static final int ic_item=0x7f020009;
+        public static final int ic_launcher=0x7f02000a;
+        public static final int login_button_selector=0x7f02000b;
     }
     public static final class id {
         public static final int ItemTitle=0x7f070009;
-        public static final int action_settings=0x7f07000a;
+        public static final int action_settings=0x7f070016;
+        public static final int btnAdd=0x7f070015;
+        public static final int btnClose=0x7f070014;
+        public static final int btnLogin=0x7f070013;
+        public static final int btnUpdate=0x7f070012;
+        public static final int btnflagCancel=0x7f07000d;
+        public static final int btnflagSave=0x7f07000e;
+        public static final int ces=0x7f07000f;
         public static final int dot_0=0x7f070003;
         public static final int dot_1=0x7f070004;
         public static final int dot_2=0x7f070005;
@@ -32,13 +43,20 @@ public final class R {
         public static final int dot_4=0x7f070007;
         public static final int first=0x7f070000;
         public static final int geryy=0x7f070008;
+        public static final int itemflag=0x7f07000a;
         public static final int title=0x7f070002;
+        public static final int tvFlag=0x7f07000b;
+        public static final int txtFlag=0x7f07000c;
+        public static final int txtLogin=0x7f070010;
+        public static final int txtPwd=0x7f070011;
         public static final int vp=0x7f070001;
     }
     public static final class layout {
         public static final int activity_first=0x7f030000;
         public static final int activity_geryy=0x7f030001;
         public static final int activity_main=0x7f030002;
+        public static final int family_flag=0x7f030003;
+        public static final int login=0x7f030004;
     }
     public static final class menu {
         public static final int main=0x7f060000;
