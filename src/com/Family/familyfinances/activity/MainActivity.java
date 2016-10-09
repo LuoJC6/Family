@@ -46,11 +46,11 @@ public class MainActivity extends Activity {
         LayoutInflater infater = LayoutInflater.from(this);
         infater.inflate(R.layout.activity_first, tabHost.getTabContentView());
         infater.inflate(R.layout.activity_geryy, tabHost.getTabContentView());
-        infater.inflate(R.layout.login, tabHost.getTabContentView());
+        infater.inflate(R.layout.system_setting, tabHost.getTabContentView());
         
         tabHost.addTab(tabHost.newTabSpec("tab01").setIndicator("首页").setContent(R.id.first));
         tabHost.addTab(tabHost.newTabSpec("tab02").setIndicator("个人应用").setContent(R.id.geryy));
-        tabHost.addTab(tabHost.newTabSpec("tab03").setIndicator("系统设置").setContent(R.id.ces));
+        tabHost.addTab(tabHost.newTabSpec("tab03").setIndicator("系统设置").setContent(R.id.setting));
 
         //设置监听事件
         checkListener checkradio = new checkListener();
