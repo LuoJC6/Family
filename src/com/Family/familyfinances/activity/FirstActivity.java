@@ -12,11 +12,11 @@ public class FirstActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_geryy);
-        btnXinZ=(Button)findViewById(R.id.btnXinZZC);
+        btnXinZ=(Button)this.findViewById(R.id.btnXinZZC);
         btnXinZ.setOnClickListener(new View.OnClickListener(){
 
 			@Override
-			public void onClick(View view) {
+			public void onClick(View arg0) {
 				Intent intent=new Intent(FirstActivity.this,SecoundActivity.class);
 				startActivity(intent);
 			}

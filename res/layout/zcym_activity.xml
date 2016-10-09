@@ -13,33 +13,18 @@
      android:orientation="vertical"
      android:layout_gravity="center"
     android:gravity="center">
-    <EditText android:id="@+id/txtLogin"
+    <EditText android:id="@+id/txtName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="用户名／手机号"/>
-    
-    <EditText android:id="@+id/txtSJ"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txtLogin"
-        android:hint=" 短信验证码"/>
-    
-    <Button android:id="@+id/btnYZM"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txtLogin"
-        android:layout_toRightOf="@id/txtSJ"
-        android:background="#ff0000"
-        android:text="获取验证码"/>
     
     <EditText android:id="@+id/txtPwd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
-        android:layout_below="@id/btnYZM"
         android:hint="请输入6位以上的密码"/>
     
-    <Button android:id="@+id/btnZC"
+    <Button android:id="@+id/btnNewLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/txtPwd"
