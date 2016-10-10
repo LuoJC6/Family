@@ -16,12 +16,12 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TabHost;
-import android.widget.TabHost.TabSpec;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
@@ -29,6 +29,7 @@ public class MainActivity extends Activity {
 	private TabHost tabHost;
 	private RadioGroup radiogroup;
 	private RadioButton ShouY,GeRYY,GeRSZ;
+	private Button btnXinZZC,btnXinZSR,btnXinZBQ,btnWoDZC,btnWoDSR,btnWoDBQ,btnShuJGL;
 	@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,6 +57,51 @@ public class MainActivity extends Activity {
         checkListener checkradio = new checkListener();
         radiogroup.setOnCheckedChangeListener(checkradio);
         
+        btnShuJGL = (Button)findViewById(R.id.btnShuJGL);
+        btnShuJGL.setOnClickListener(new View.OnClickListener() {
+ 		
+ 		@Override
+ 		public void onClick(View v) {
+ 				Intent intent = new Intent();
+ 				intent.setAction("shujgl");
+ 				startActivity(intent);
+ 		}
+ 		
+ 		
+ 	});
+        btnXinZBQ = (Button)findViewById(R.id.btnXinZBQ);
+        btnXinZBQ.setOnClickListener(new View.OnClickListener() {
+ 		
+ 		@Override
+ 		public void onClick(View v) {
+ 			// TODO Auto-generated method stub
+ 			Intent intent = new Intent();
+				intent.setAction("xinzbb");
+				startActivity(intent);
+ 		}
+ 	});
+        btnXinZZC = (Button)findViewById(R.id.btnXinZZC);
+        btnXinZZC.setOnClickListener(new View.OnClickListener() {
+ 		
+ 		@Override
+ 		public void onClick(View v) {
+ 			// TODO Auto-generated method stub
+ 			Intent intent = new Intent();
+				intent.setAction("xinzzc");
+				startActivity(intent);
+ 		}
+ 	});
+        btnXinZSR = (Button)findViewById(R.id.btnXinZSR);
+        btnXinZSR.setOnClickListener(new View.OnClickListener() {
+ 		
+ 		@Override
+ 		public void onClick(View v) {
+ 			// TODO Auto-generated method stub
+ 			Intent intent = new Intent();
+				intent.setAction("xinzsr");
+				startActivity(intent);
+ 		}
+ 	});
         /**
          * 图片轮播*/
         mViewPaper = (ViewPager) findViewById(R.id.vp);

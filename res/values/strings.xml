@@ -15,6 +15,7 @@
     <string name="name8">我的收入</string>
     <string name="name9">我的便签</string>
     <string name="name10">数据管理</string>
+    <string name="name11">便签管理</string>
     
     <drawable name="clr_normal">#ff6501</drawable>
     <drawable name="clr_pressed">#a44100</drawable>

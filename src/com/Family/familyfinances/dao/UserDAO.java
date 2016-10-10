@@ -26,7 +26,7 @@ public class UserDAO {
 		// 初始化SQLiteDatabase对象
 		db = helper.getWritableDatabase();
 		// 执行添加用户操作
-		db.execSQL("insert into tb_user (name,password) values (?,?)",
+		db.execSQL("insert into tb_user (password,name) values (?,?)",
 				new Object[] {tb_user.getName(), tb_user.getPassword() });
 	}
 
@@ -75,5 +75,23 @@ public class UserDAO {
 		// 如果没有数据，则返回0
 		return 0;
 	}
+/**
+ * 登录验证
+ * @param tb_User 
+ */
+public boolean Login(Tb_user tb_User)
+{
+	db=helper.getReadableDatabase();
+	String sql="select * from tb_user where name=? and password=?";
+	Cursor cursor=db.rawQuery(sql, new String[]{
+			tb_User.getName(),
+			tb_User.getPassword()});
+	 if(cursor.moveToNext()==true){
+            cursor.close();
+            return true;
+        }
+        return false;
+}
+
 }
 

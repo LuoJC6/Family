@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <EditText android:id="@+id/txtpayid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="ID"
+        />
+    <EditText android:id="@+id/txtmoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="金额"
+        />
+    <EditText android:id="@+id/txttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="时间"
+        />
+    <EditText android:id="@+id/txttype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="类型"
+        />
+    <EditText android:id="@+id/txtaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="地点"
+        />
+    <EditText android:id="@+id/txtmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="备注"
+        />
+    <Button android:id="@+id/btnpaySave"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="保存"
+        />
+</LinearLayout>

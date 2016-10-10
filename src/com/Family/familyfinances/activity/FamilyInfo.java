@@ -12,6 +12,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 public class FamilyInfo extends Activity{
 	@Override
@@ -39,13 +40,16 @@ public class FamilyInfo extends Activity{
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				InfamilyDAO infamilyDAO = new InfamilyDAO(FamilyInfo.this);// 创建PwdDAO对象
-//				Tb_Infamily tb_infamily=new Tb_Infamily(txtInMoney.getText().toString(),
-//							txtInTime.getText().toString(),
-//							txtInHandler.getText().toString(),
-//							txtInMark.getText().toString(),
-//							spInType.getText().toString());// 根据输入的密码创建Tb_pwd对象
+				Tb_Infamily tb_infamily=new Tb_Infamily(1,Double.valueOf(txtInMoney.getText().toString()),
+							txtInTime.getText().toString(),
+							txtInHandler.getText().toString(),
+							txtInMark.getText().toString(),
+							spInType.getText().toString());// 根据输入的密码创建Tb_pwd对象
 				
-//				infamilyDAO.add(tb_infamily);// 添加用户密码
+				infamilyDAO.add(tb_infamily);// 添加收入信息
+				//提示信息
+				Toast.makeText(FamilyInfo.this, "新增成功", Toast.LENGTH_SHORT)
+				.show();
 			}
 		});
 	}

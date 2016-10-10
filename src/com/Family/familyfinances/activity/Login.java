@@ -1,6 +1,7 @@
 package com.Family.familyfinances.activity;
 
 import com.Family.familyfinances.dao.UserDAO;
+import com.Family.familyfinances.model.Tb_user;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -12,7 +13,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class Login extends Activity {
-	EditText txtlogin,txtpwd;
+	EditText txtName,txtpwd;
 	Button btnlogin, btnupdate,btnzhuc,btnclose;
 
 	@Override
@@ -22,7 +23,7 @@ public class Login extends Activity {
 		setContentView(R.layout.login);
 
 		txtpwd = (EditText)findViewById(R.id.txtPwd);
-		txtlogin = (EditText)findViewById(R.id.txtLogin);
+		txtName = (EditText)findViewById(R.id.txtLogin);
 		btnlogin = (Button)findViewById(R.id.btnLogin);
 		btnupdate = (Button)findViewById(R.id.btnUpdate);
 		btnzhuc = (Button)findViewById(R.id.btnAdd);
@@ -30,26 +31,28 @@ public class Login extends Activity {
 		btnlogin.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				// TODO Auto-generated method stub
-//				UserDAO userDAO = new UserDAO(Login.this);
-//				//判断是否有该用户及是否输入了密码
-//			
-//					//判断输入密码是否与数据库中保存的一致
-//					if (userDAO.find().getPassword()
-//							.equals(txtpwd.getText().toString())|| 
-//						userDAO.find().getName()
-//							.equals(txtlogin.getText().toString())	
-//							) {
-//						Intent intent = new Intent(Login.this,MainActivity.class);
-//						startActivity(intent);
-//					} else {
-//						//弹出信息提示							
-//						Toast.makeText(Login.this, "请输入正确的用户名密码！",
-//								Toast.LENGTH_SHORT).show();
-//					}
-				Intent intent = new Intent();
-				intent.setAction("Main");
-				startActivity(intent);
+				// 获取控件
+				String UserName=txtName.getText().toString().trim();
+				String Password=txtpwd.getText().toString().trim();
+				UserDAO objUserDAO=new UserDAO(Login.this);
+				Tb_user tb_User=new Tb_user();
+				tb_User.setName(UserName);
+				tb_User.setPassword(Password);
+				boolean flag=objUserDAO.Login(tb_User);
+				if(!"".equals(UserName)&&!"".equals(Password)){
+					//判断用户名和密码是否跟数据库中一致
+					if(flag){
+						Toast.makeText(Login.this, "登录成功",Toast.LENGTH_SHORT).show();
+						Intent intent = new Intent(Login.this,MainActivity.class);
+						startActivity(intent);
+					}
+					else{
+						Toast.makeText(Login.this, "登录失败",Toast.LENGTH_SHORT).show();
+					}
+				}
+				else{
+					Toast.makeText(Login.this, "用户和密码不能为空",Toast.LENGTH_LONG).show();
+				}
 			}
 		});
 		btnzhuc.setOnClickListener(new OnClickListener() {
@@ -57,9 +60,6 @@ public class Login extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				// 跳转到注册页面
-//				Intent intent = new Intent();
-//				intent.setAction("t");
-//				startActivity(intent);
 				Intent intent = new Intent();
 				intent.setAction("new");
 				startActivity(intent);
