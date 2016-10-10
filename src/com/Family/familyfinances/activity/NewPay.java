@@ -18,7 +18,6 @@ public class NewPay extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.family_newpay);
 		//����ؼ�
-		final EditText txtid = (EditText)findViewById(R.id.txtpayid);
 		final EditText txtmoney = (EditText)findViewById(R.id.txtmoney);
 		final EditText txttime = (EditText)findViewById(R.id.txttime);
 		final EditText txttype = (EditText)findViewById(R.id.txttype);
@@ -32,7 +31,7 @@ public class NewPay extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				OutfamilyDAO outfamilyDAO = new OutfamilyDAO(NewPay.this);// ����PwdDAO����
-				Tb_Outfamily tb_outfamily = new Tb_Outfamily(Integer.parseInt(txtid.getText().toString()),
+				Tb_Outfamily tb_outfamily = new Tb_Outfamily(outfamilyDAO.getMaxId() + 1,
 						Double.valueOf(txtmoney.getText().toString()),
 						txttime.getText().toString(),
 						txttype.getText().toString(),
@@ -44,6 +43,7 @@ public class NewPay extends Activity {
 				// ������Ϣ��ʾ
 				Toast.makeText(NewPay.this, "新增成功", Toast.LENGTH_SHORT)
 						.show();
+				finish();
 			}
 		});
 	}
