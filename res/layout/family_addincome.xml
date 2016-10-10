@@ -137,7 +137,7 @@
               android:layout_height="wrap_content" 
               android:layout_alignParentRight="true"
               android:layout_marginLeft="10dp"
-              android:text="取消"/>
+              android:text="返回"/>
           
           <Button android:id="@+id/btnSave"
               android:layout_width="80dp"
