@@ -10,15 +10,16 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight="3">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center_horizontal"
-            android:textSize="35sp"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            android:text="请添加新增收入" />
+        <TextView 
+			android:layout_width="wrap_content"
+			android:layout_gravity="center"
+			android:gravity="center_horizontal"
+			android:text="收入管理"
+			android:id="@+id/txtIncome"
+			android:textSize="40sp"
+			android:textColor="#000000"
+			android:textStyle="bold" 
+			android:layout_height="wrap_content"/>
       </LinearLayout>
      <LinearLayout android:orientation="vertical"
         android:layout_width="fill_parent"
@@ -74,14 +75,6 @@
                android:layout_alignBaseline="@+id/spInType"
                android:layout_alignLeft="@+id/tvInTime"
                />
-<!--             <Spinner
-                android:id="@+id/spInType"
-                android:layout_width="210dp"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/tvInType" 
-                android:layout_below="@id/txtInTime"
-                android:entries="@array/intype"
-                /> -->
                 <EditText 
                 android:id="@+id/spInType"
                 android:layout_width="210dp"
@@ -133,18 +126,18 @@
             android:layout_height="fill_parent"
             android:padding="10dp" >
 
-          <Button android:id="@+id/btnCancel"
+          <Button android:id="@+id/btndelete"
               android:layout_width="80dp"
               android:layout_height="wrap_content" 
               android:layout_alignParentRight="true"
               android:layout_marginLeft="10dp"
-              android:text="返回"/>
+              android:text="删除"/>
           
-          <Button android:id="@+id/btnSave"
+          <Button android:id="@+id/btnedit"
               android:layout_width="80dp"
               android:layout_height="wrap_content"
               android:layout_toLeftOf="@id/btnCancel"
-              android:text="保存" />
+              android:text="修改" />
             
         </RelativeLayout>
      </LinearLayout>  

@@ -102,6 +102,39 @@ public class MainActivity extends Activity {
 				startActivity(intent);
  		}
  	});
+        btnWoDZC = (Button)findViewById(R.id.btnWoDZC);
+        btnWoDZC.setOnClickListener(new View.OnClickListener() {
+ 		
+ 		@Override
+ 		public void onClick(View v) {
+ 			// TODO Auto-generated method stub
+ 			Intent intent = new Intent();
+				intent.setAction("wodzc");
+				startActivity(intent);
+ 		}
+ 	});
+        btnWoDBQ = (Button)findViewById(R.id.btnWoDBQ);
+        btnWoDBQ.setOnClickListener(new View.OnClickListener() {
+ 		
+ 		@Override
+ 		public void onClick(View v) {
+ 			// TODO Auto-generated method stub
+ 			Intent intent = new Intent();
+				intent.setAction("wodbq");
+				startActivity(intent);
+ 		}
+ 	});
+        btnWoDSR = (Button)findViewById(R.id.btnWoDSR);
+        btnWoDSR.setOnClickListener(new View.OnClickListener() {
+ 		
+ 		@Override
+ 		public void onClick(View v) {
+ 			// TODO Auto-generated method stub
+ 			Intent intent = new Intent();
+				intent.setAction("wodsr");
+				startActivity(intent);
+ 		}
+ 	});
         /**
          * 图片轮播*/
         mViewPaper = (ViewPager) findViewById(R.id.vp);

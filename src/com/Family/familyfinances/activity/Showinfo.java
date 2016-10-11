@@ -73,13 +73,15 @@ public class Showinfo extends Activity {
 				String strid = strInfo.substring(0, strInfo.indexOf('|'));// 从项信息中截取编号
 				Intent intent = null;// 创建Intent对象
 				if (strType == "btnoutinfo" | strType == "btnininfo") {// 判断如果是支出或者收入信息
-					intent = new Intent(Showinfo.this, ManageFlag.class);
-					// 使用InfoManage窗口初始化Intent对象
+					intent = new Intent();
+					intent.setAction("Xinxgl");
+					startActivity(intent);
+					// 使用manage_income窗口初始化Intent对象
 					intent.putExtra(FLAG, new String[] { strid, strType });// 设置要传递的数据
 				} else if (strType == "btnflaginfo") {// 判断如果是便签信息
 					intent = new Intent();
 					intent.setAction("shujgg");
-					startActivity(intent);// 使用FlagManage窗口初始化Intent对象
+					startActivity(intent);// 使用ManageFlag窗口初始化Intent对象
 					intent.putExtra(FLAG, strid);// 设置要传递的数据
 				}
 				startActivity(intent);// 执行Intent，打开相应的Activity
