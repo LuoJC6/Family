@@ -17,6 +17,7 @@ import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -37,6 +38,7 @@ public class MainActivity extends Activity {
         
         tabHost = (TabHost)findViewById(android.R.id.tabhost);
         tabHost.setup();
+        final EditText txtlogin = (EditText)findViewById(R.id.txtLogin);
         
         radiogroup = (RadioGroup)findViewById(R.id.radiogroup);
         ShouY = (RadioButton)findViewById(R.id.ShouY);
@@ -133,6 +135,25 @@ public class MainActivity extends Activity {
  			Intent intent = new Intent();
 				intent.setAction("wodsr");
 				startActivity(intent);
+ 		}
+ 	});
+        /**
+         * 退出系统
+         * */
+        Button btnExit = (Button)findViewById(R.id.btnExit);
+        btnExit.setOnClickListener(new View.OnClickListener() {
+ 		
+ 		@Override
+ 		public void onClick(View v) {
+ 			// TODO Auto-generated method stub
+ 			
+ 				Intent intent = new Intent(Intent.ACTION_MAIN);
+ 				intent.addCategory(Intent.CATEGORY_HOME);
+ 				intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+ 				startActivity(intent);
+ 				System.exit(0);
+ 				txtlogin.setText("");
+ 			
  		}
  	});
         /**

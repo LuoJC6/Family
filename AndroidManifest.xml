@@ -30,6 +30,14 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".PwdFind"
+            android:label="@string/zhmm" >
+            <intent-filter>
+                <action android:name="zhmm" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".Showinfo"
             android:label="@string/name10" >
             <intent-filter>

@@ -39,7 +39,7 @@ public class UserDAO {
 		db = helper.getWritableDatabase();// 初始化SQLiteDatabase对象
 		// 执行修改密码操作
 		db.execSQL("update tb_user set password = ? where name = ?",
-				new Object[] { tb_user.getPassword(),tb_user.getName()});
+				new Object[] { tb_user.getName(), tb_user.getPassword()});
 	}
 
 	/**
@@ -54,8 +54,8 @@ public class UserDAO {
 		if (cursor.moveToNext())// 遍历查找到的密码信息
 		{
 			// 将密码存储到Tb_user类中
-			return new Tb_user(cursor.getString(cursor.getColumnIndex("name")),
-					cursor.getString(cursor.getColumnIndex("password")));
+			return new Tb_user(cursor.getString(cursor.getColumnIndex("password")),
+					cursor.getString(cursor.getColumnIndex("name")));
 		}
 		// 如果没有信息，则返回null
 		return null;
@@ -65,7 +65,7 @@ public class UserDAO {
 		// 初始化SQLiteDatabase对象
 		db = helper.getWritableDatabase();
 		// 获取密码信息的记录数
-		Cursor cursor = db.rawQuery("select count(password) from tb_pwd", null);
+		Cursor cursor = db.rawQuery("select count(name) from tb_pwd", null);
 		// 判断Cursor中是否有数据
 		if (cursor.moveToNext())
 		{

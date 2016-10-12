@@ -48,19 +48,19 @@ public final class R {
         public static final int GeRYY=0x7f080012;
         public static final int InHandler=0x7f080035;
         public static final int ShouY=0x7f080011;
-        public static final int action_settings=0x7f080056;
+        public static final int action_settings=0x7f080058;
         public static final int btnAdd=0x7f08003f;
         public static final int btnCancel=0x7f080021;
-        public static final int btnExit=0x7f080054;
+        public static final int btnExit=0x7f080056;
         public static final int btnFlagDelete=0x7f080043;
         public static final int btnFlagEdit=0x7f080044;
-        public static final int btnHelp=0x7f080053;
+        public static final int btnHelp=0x7f080055;
         public static final int btnInCancel=0x7f08001f;
         public static final int btnInSave=0x7f080020;
         public static final int btnLogin=0x7f08003e;
         public static final int btnNewLogin=0x7f080049;
-        public static final int btnOfwe=0x7f080052;
-        public static final int btnQingC=0x7f080051;
+        public static final int btnOfwe=0x7f080054;
+        public static final int btnQingC=0x7f080053;
         public static final int btnSave=0x7f080022;
         public static final int btnShuJGL=0x7f08000f;
         public static final int btnUpdate=0x7f08003d;
@@ -74,9 +74,10 @@ public final class R {
         public static final int btnedit=0x7f080047;
         public static final int btnflagCancel=0x7f080026;
         public static final int btnflagSave=0x7f080027;
-        public static final int btnflaginfo=0x7f08004d;
-        public static final int btnininfo=0x7f08004c;
-        public static final int btnoutinfo=0x7f08004b;
+        public static final int btnflaginfo=0x7f08004f;
+        public static final int btnininfo=0x7f08004e;
+        public static final int btnok=0x7f08004b;
+        public static final int btnoutinfo=0x7f08004d;
         public static final int btnpaySave=0x7f080039;
         public static final int ces=0x7f08003a;
         public static final int dot_0=0x7f080003;
@@ -84,21 +85,22 @@ public final class R {
         public static final int dot_2=0x7f080005;
         public static final int dot_3=0x7f080006;
         public static final int dot_4=0x7f080007;
+        public static final int findpwd=0x7f08004a;
         public static final int first=0x7f080000;
         public static final int flagmanage=0x7f080040;
         public static final int geryy=0x7f080008;
         public static final int incot=0x7f080014;
-        public static final int itemLogin=0x7f080055;
+        public static final int itemLogin=0x7f080057;
         public static final int itemflag=0x7f080023;
         public static final int iteminfo=0x7f080028;
         public static final int linLayout1=0x7f080029;
         public static final int linLyout2=0x7f08002e;
-        public static final int linearLayout1=0x7f08004a;
-        public static final int linearLayout2=0x7f08004e;
-        public static final int lvinfo=0x7f08004f;
+        public static final int linearLayout1=0x7f08004c;
+        public static final int linearLayout2=0x7f080050;
+        public static final int lvinfo=0x7f080051;
         public static final int lvnaccountinfo=0x7f08002f;
         public static final int radiogroup=0x7f080010;
-        public static final int setting=0x7f080050;
+        public static final int setting=0x7f080052;
         public static final int spInType=0x7f08001a;
         public static final int title=0x7f080002;
         public static final int tvFlag=0x7f080024;
@@ -145,16 +147,16 @@ public final class R {
         public static final int manage_flag=0x7f030009;
         public static final int manage_income=0x7f03000a;
         public static final int newlogin=0x7f03000b;
-        public static final int showinfo=0x7f03000c;
-        public static final int system_setting=0x7f03000d;
-        public static final int zcym_activity=0x7f03000e;
+        public static final int password_find=0x7f03000c;
+        public static final int showinfo=0x7f03000d;
+        public static final int system_setting=0x7f03000e;
+        public static final int zcym_activity=0x7f03000f;
     }
     public static final class menu {
         public static final int main=0x7f070000;
     }
     public static final class string {
         public static final int action_settings=0x7f050002;
-        public static final int app_name=0x7f050000;
         public static final int hello_world=0x7f050001;
         public static final int name=0x7f050003;
         public static final int name1=0x7f050004;
@@ -168,6 +170,7 @@ public final class R {
         public static final int name7=0x7f05000a;
         public static final int name8=0x7f05000b;
         public static final int name9=0x7f05000c;
+        public static final int zhmm=0x7f050000;
     }
     public static final class style {
         /** 

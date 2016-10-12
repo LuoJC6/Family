@@ -65,5 +65,15 @@ public class Login extends Activity {
 				startActivity(intent);
 			}
 		});
+       btnupdate.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// 跳转到找回密码页面
+				Intent intent = new Intent();
+				intent.setAction("zhmm");
+				startActivity(intent);
+			}
+       });
 	}
 }
