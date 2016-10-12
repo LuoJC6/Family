@@ -55,7 +55,7 @@
 		    <TextView 
             android:layout_width="70dp"
             android:layout_height="wrap_content"
-            android:text="金额"
+            android:text="类别"
             style="@style/text_color_size_2"
             android:layout_gravity="top"
             android:paddingLeft="20px"
@@ -63,7 +63,7 @@
 		    <TextView 
             android:layout_width="70dp"
             android:layout_height="wrap_content"
-            android:text="类别"
+            android:text="金额"
             style="@style/text_color_size_2"
             android:layout_gravity="top"
             android:paddingLeft="20px"

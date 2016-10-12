@@ -42,7 +42,7 @@ public class ManageIncome extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.manage_income);// 设置布局文件
 		tvtitle = (TextView) findViewById(R.id.txtIncome);// 获取标题标签对象
-//		textView = (TextView) findViewById(R.id.tvInOut);// 获取地点/付款方标签对
+		textView = (TextView) findViewById(R.id.incot);// 获取地点/付款方标签对
 		txtMoney = (EditText) findViewById(R.id.tvInMoney);// 获取金额
 		txtTime = (EditText) findViewById(R.id.tvInTime);// 获取时间
 		spType = (EditText) findViewById(R.id.tvInType);// 获取类别

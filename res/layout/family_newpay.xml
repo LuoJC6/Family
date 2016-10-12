@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/incot"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="@drawable/bj1"
-    android:orientation="vertical" >
-    <LinearLayout 
+    android:id="@+id/iteminfo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:layout_marginTop="5dp"
+    android:weightSum="1">
+        <LinearLayout 
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -16,11 +17,11 @@
             android:layout_gravity="center"
             android:gravity="center_horizontal"
             android:textSize="35sp"
-            android:textColor="#000000"
+            android:textColor="#ff0000"
             android:textStyle="bold"
             android:text="请添加新增支出" />
       </LinearLayout>
-     <LinearLayout android:orientation="vertical"
+      <LinearLayout android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight="1">
@@ -28,101 +29,86 @@
           android:layout_width="fill_parent"
           android:layout_height="fill_parent"
           android:padding="10dp">
-
-          <TextView android:id="@+id/tvInMoney"
+    <TextView android:id="@+id/InMoney"
               android:layout_width="90dp"
               android:layout_height="wrap_content"
                android:textSize="20sp"
                android:text="金额"
-               android:layout_alignBottom="@+id/txtmoney"
-               android:layout_alignBaseline="@+id/txtInMoney"
+               android:layout_alignBottom="@+id/money"
+               android:layout_alignBaseline="@+id/money"
                android:layout_alignParentLeft="true"
                android:layout_marginLeft="16dp"/>
-
-          <EditText
-              android:id="@+id/txtmoney"
+    <EditText android:id="@+id/money"
               android:layout_width="210dp"
-              android:layout_height="wrap_content" 
-              android:layout_toRightOf="@id/tvInMoney"
-              android:inputType="number"
-              android:maxLength="9"
-              android:hint="0.00"/>
-          
-          <TextView android:id="@+id/tvTime"
+              android:layout_height="50dp" 
+        android:layout_toRightOf="@id/InMoney"
+        android:hint="金额"
+        />
+    <TextView android:id="@+id/InTime"
               android:layout_width="90dp"
               android:layout_height="wrap_content"
                android:textSize="20sp"
                android:text="时间"
-               android:layout_alignBottom="@+id/txttime"
-               android:layout_alignBaseline="@+id/txttime"
-               android:layout_toLeftOf="@+id/txtmoney"/>
-          <EditText
-              android:id="@+id/txttime"
+               android:layout_alignBottom="@+id/time"
+               android:layout_alignBaseline="@+id/time"
+               android:layout_toLeftOf="@+id/money"/>
+    <EditText android:id="@+id/time"
               android:layout_width="210dp"
-              android:layout_height="wrap_content" 
-              android:layout_toRightOf="@id/tvTime"
-              android:layout_below="@id/txtmoney"
-              android:inputType="datetime"
-              android:hint="2016-01-01"/>
-          
-            <TextView android:id="@+id/tvType"
+              android:layout_height="50dp" 
+        android:layout_toRightOf="@id/InTime"
+        android:layout_below="@id/money"
+        android:inputType="datetime"
+        android:hint="2016-01-01"
+        />
+    <TextView android:id="@+id/InType"
               android:layout_width="90dp"
               android:layout_height="wrap_content"
                android:textSize="20sp"
                android:text="类别"
-               android:layout_alignBottom="@+id/txttype"
-               android:layout_alignBaseline="@+id/txttype"
-               android:layout_alignLeft="@+id/tvTime"
+               android:layout_alignBottom="@+id/type"
+               android:layout_alignBaseline="@+id/type"
+               android:layout_alignLeft="@+id/InTime"
                />
-<!--             <Spinner
-                android:id="@+id/spInType"
-                android:layout_width="210dp"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/tvInType" 
-                android:layout_below="@id/txtInTime"
-                android:entries="@array/intype"
-                /> -->
-                <EditText 
-                android:id="@+id/txttype"
-                android:layout_width="210dp"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/tvType" 
-                android:layout_below="@id/txttime"
-                    />
-            <TextView android:id="@+id/InHandler"
+    <EditText android:id="@+id/type"
+              android:layout_width="210dp"
+              android:layout_height="50dp" 
+        android:hint="类型"
+        android:layout_toRightOf="@id/InType" 
+        android:layout_below="@id/time"
+        />
+    <TextView android:id="@+id/InHandler"
               android:layout_width="90dp"
               android:layout_height="wrap_content"
                android:textSize="20sp"
-               android:text="来源"
-               android:layout_alignBottom="@+id/txtaddress"
-               android:layout_alignBaseline="@+id/txtaddress"
-               android:layout_toLeftOf="@+id/txttype"/>
-          <EditText
-              android:id="@+id/txtaddress"
+               android:text="地点"
+               android:layout_alignBottom="@+id/address"
+               android:layout_alignBaseline="@+id/address"
+               android:layout_toLeftOf="@+id/type"/>
+    <EditText android:id="@+id/address"
               android:layout_width="210dp"
-              android:layout_height="wrap_content" 
-              android:layout_toRightOf="@id/InHandler"
-              android:layout_below="@id/txttype"
-              android:singleLine="false"
-              />
-          <TextView android:id="@+id/tvMark"
+              android:layout_height="50dp" 
+        android:layout_toRightOf="@id/InHandler"
+        android:layout_below="@id/type"
+        android:hint="地点"
+        />
+    <TextView android:id="@+id/InMark"
               android:layout_width="90dp"
-              android:layout_height="wrap_content"
+              android:layout_height="50dp"
                android:textSize="20sp"
                android:text="备注"
-               android:layout_alignTop="@+id/txtmark"
-               android:layout_toLeftOf="@+id/txtaddress"/>
-          <EditText
-              android:id="@+id/txtmark"
+               android:layout_alignTop="@+id/mark"
+               android:layout_toLeftOf="@+id/address"/>
+    <EditText android:id="@+id/mark"
               android:layout_width="210dp"
-              android:layout_height="wrap_content" 
-              android:layout_toRightOf="@id/tvMark"
-              android:layout_below="@id/txtaddress"
-              android:gravity="top"
-              android:singleLine="false"/>
-        </RelativeLayout>      
-     </LinearLayout>
-     <LinearLayout android:orientation="vertical"
+              android:layout_height="50dp" 
+        android:layout_toRightOf="@id/InMark"
+        android:layout_below="@id/address"
+        android:gravity="top"
+        android:hint="备注"
+        />
+    </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical"
          android:layout_width="fill_parent"
          android:layout_height="fill_parent" 
          android:layout_weight="3"
@@ -132,20 +118,18 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:padding="10dp" >
-
-          <Button android:id="@+id/btnCancel"
+    <Button android:id="@+id/save"
+       		android:layout_width="80dp"
+             android:layout_height="100dp"
+             android:layout_toLeftOf="@id/btnCancel"
+        	android:hint="保存"
+        />
+    <Button android:id="@+id/cancel"
               android:layout_width="80dp"
-              android:layout_height="wrap_content" 
+              android:layout_height="100dp" 
               android:layout_alignParentRight="true"
               android:layout_marginLeft="10dp"
               android:text="返回"/>
-          
-          <Button android:id="@+id/btnpaySave"
-              android:layout_width="80dp"
-              android:layout_height="wrap_content"
-              android:layout_toLeftOf="@id/btnCancel"
-              android:text="保存" />
-            
         </RelativeLayout>
      </LinearLayout>  
 </LinearLayout>

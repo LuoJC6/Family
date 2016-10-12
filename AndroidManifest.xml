@@ -62,10 +62,42 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".FamilyInfo"
+            android:name=".AddIncome"
             android:label="@string/name5" >
             <intent-filter>
                 <action android:name="xinzsr" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".income"
+            android:label="@string/name8" >
+            <intent-filter>
+                <action android:name="wodsr" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MyFlag"
+            android:label="@string/name9" >
+            <intent-filter>
+                <action android:name="wodbq" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MyPay"
+            android:label="@string/name7" >
+            <intent-filter>
+                <action android:name="WoZC" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ManageIncome"
+            android:label="@string/name12" >
+            <intent-filter>
+                <action android:name="Zhicgl" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>

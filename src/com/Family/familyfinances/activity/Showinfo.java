@@ -95,35 +95,35 @@ public class Showinfo extends Activity {
 		switch (intType) {// 以intType为条件进行判断
 		case R.id.btnoutinfo:// 如果是btnoutinfo按钮
 			strType = "btnoutinfo";// 为strType变量赋值
-			OutfamilyDAO outaccountinfo = new OutfamilyDAO(Showinfo.this);// 创建OutaccountDAO对象
+			OutfamilyDAO outfamilyDAO = new OutfamilyDAO(Showinfo.this);// 创建OutfamilyDAO对象
 			// 获取所有支出信息，并存储到List泛型集合中
-			List<Tb_Outfamily> listoutinfos = outaccountinfo.getScrollData(0,
-					(int) outaccountinfo.getCount());
+			List<Tb_Outfamily> listoutinfos = outfamilyDAO.getScrollData(0,
+					(int) outfamilyDAO.getCount());
 			strInfos = new String[listoutinfos.size()];// 设置字符串数组的长度
 			int i = 0;// 定义一个开始标识
-			for (Tb_Outfamily tb_outaccount : listoutinfos) {// 遍历List泛型集合
+			for (Tb_Outfamily tb_outfamily : listoutinfos) {// 遍历List泛型集合
 				// 将支出相关信息组合成一个字符串，存储到字符串数组的相应位置
-				strInfos[i] = tb_outaccount.getid() + "|"
-						+ tb_outaccount.getType() + " "
-						+ String.valueOf(tb_outaccount.getMoney()) + "元     "
-						+ tb_outaccount.getTime();
+				strInfos[i] = tb_outfamily.getid() + "|"
+						+ tb_outfamily.getType() + " "
+						+ String.valueOf(tb_outfamily.getMoney()) + "元     "
+						+ tb_outfamily.getTime();
 				i++;// 标识加1
 			}
 			break;
 		case R.id.btnininfo:// 如果是btnininfo按钮
 			strType = "btnininfo";// 为strType变量赋值
-			InfamilyDAO inaccountinfo = new InfamilyDAO(Showinfo.this);// 创建InaccountDAO对象
+			InfamilyDAO infamilydao = new InfamilyDAO(Showinfo.this);// 创建InaccountDAO对象
 			// 获取所有收入信息，并存储到List泛型集合中
-			List<Tb_Infamily> listinfos = inaccountinfo.getScrollData(0,
-					(int) inaccountinfo.getCount());
+			List<Tb_Infamily> listinfos = infamilydao.getScrollData(0,
+					(int) infamilydao.getCount());
 			strInfos = new String[listinfos.size()];// 设置字符串数组的长度
 			int m = 0;// 定义一个开始标识
-			for (Tb_Infamily tb_inaccount : listinfos) {// 遍历List泛型集合
+			for (Tb_Infamily tb_infamily : listinfos) {// 遍历List泛型集合
 				// 将收入相关信息组合成一个字符串，存储到字符串数组的相应位置
-				strInfos[m] = tb_inaccount.getid() + "|"
-						+ tb_inaccount.getType() + " "
-						+ String.valueOf(tb_inaccount.getMoney()) + "元     "
-						+ tb_inaccount.getTime();
+				strInfos[m] = tb_infamily.getid() + "|"
+						+ tb_infamily.getType() + " "
+						+ String.valueOf(tb_infamily.getMoney()) + "元     "
+						+ tb_infamily.getTime();
 				m++;// 标识加1
 			}
 			break;
@@ -137,7 +137,7 @@ public class Showinfo extends Activity {
 			int n = 0;// 定义一个开始标识
 			for (Tb_flag tb_flag : listFlags) {// 遍历List泛型集合
 				// 将便签相关信息组合成一个字符串，存储到字符串数组的相应位置
-				strInfos[n] = tb_flag.getid() + "|" + tb_flag.getFlag();
+				strInfos[n] = tb_flag.getid() + "|" +"   " + tb_flag.getFlag();
 				if (strInfos[n].length() > 15)// 判断便签信息的长度是否大于15
 					strInfos[n] = strInfos[n].substring(0, 15) + "⋯⋯";// 将位置大于15之后的字符串用⋯⋯代替
 				n++;// 标识加1
