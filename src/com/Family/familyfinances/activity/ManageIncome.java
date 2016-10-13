@@ -2,11 +2,6 @@ package com.Family.familyfinances.activity;
 
 import java.util.Calendar;
 
-import com.Family.familyfinances.dao.InfamilyDAO;
-import com.Family.familyfinances.dao.OutfamilyDAO;
-import com.Family.familyfinances.model.Tb_Infamily;
-import com.Family.familyfinances.model.Tb_Outfamily;
-
 import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
@@ -21,10 +16,16 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.Family.familyfinances.dao.InfamilyDAO;
+import com.Family.familyfinances.dao.OutfamilyDAO;
+import com.Family.familyfinances.model.Tb_Infamily;
+import com.Family.familyfinances.model.Tb_Outfamily;
+
 public class ManageIncome extends Activity {
 	protected static final int DATE_DIALOG_ID = 0;// 创建日期对话框常量
 	TextView tvtitle, textView;// 创建两个TextView对象
-	EditText txtMoney,spType, txtTime, txtHA, txtMark;// 创建4个EditText对象
+	EditText txtMoney, txtTime, txtHA, txtMark;// 创建4个EditText对象
+	Spinner spType;// 创建Spinner对象
 	Button btnEdit, btnDel;// 创建两个Button对象
 	String[] strInfos;// 定义字符串数组
 	String strid, strType;// 定义两个字符串变量，分别用来记录信息编号和管理类型
@@ -33,23 +34,23 @@ public class ManageIncome extends Activity {
 	private int mMonth;// 月
 	private int mDay;// 日
 
-	OutfamilyDAO outfamaily = new OutfamilyDAO(ManageIncome.this);// 创建OutfamilyDAO对象
-	InfamilyDAO Infamaily = new InfamilyDAO(ManageIncome.this);// 创建InfamilyDAO对象
+	OutfamilyDAO out = new OutfamilyDAO(ManageIncome.this);// 创建OutaccountDAO对象
+	InfamilyDAO in = new InfamilyDAO(ManageIncome.this);// 创建InaccountDAO对象
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.manage_income);// 设置布局文件
-		tvtitle = (TextView) findViewById(R.id.txtIncome);// 获取标题标签对象
-		textView = (TextView) findViewById(R.id.incot);// 获取地点/付款方标签对
-		txtMoney = (EditText) findViewById(R.id.tvInMoney);// 获取金额
-		txtTime = (EditText) findViewById(R.id.tvInTime);// 获取时间
-		spType = (EditText) findViewById(R.id.tvInType);// 获取类别
-		txtHA = (EditText) findViewById(R.id.tvInHandler);// 获取来源
-		txtMark = (EditText) findViewById(R.id.tvInMark);// 获取备注文本框
-		btnEdit = (Button) findViewById(R.id.btnedit);// 获取修改按钮
-		btnDel = (Button) findViewById(R.id.btndelete);// 获取删除按钮
+		tvtitle = (TextView) findViewById(R.id.inouttitle);// 获取标题标签对象
+		textView = (TextView) findViewById(R.id.tvInOut);// 获取地点/付款方标签对象
+		txtMoney = (EditText) findViewById(R.id.txtInOutMoney);// 获取金额文本框
+		txtTime = (EditText) findViewById(R.id.txtInOutTime);// 获取时间文本框
+		spType = (Spinner) findViewById(R.id.spInOutType);// 获取类别下拉列表
+		txtHA = (EditText) findViewById(R.id.txtInOut);// 获取地点/付款方文本框
+		txtMark = (EditText) findViewById(R.id.txtInOutMark);// 获取备注文本框
+		btnEdit = (Button) findViewById(R.id.btnInOutEdit);// 获取修改按钮
+		btnDel = (Button) findViewById(R.id.btnInOutDelete);// 获取删除按钮
 
 		Intent intent = getIntent();// 创建Intent对象
 		Bundle bundle = intent.getExtras();// 获取传入的数据，并使用Bundle记录
@@ -60,24 +61,24 @@ public class ManageIncome extends Activity {
 		{
 			tvtitle.setText("支出管理");// 设置标题为“支出管理”
 			textView.setText("地  点：");// 设置“地点/付款方”标签文本为“地 点：”
-			// 根据编号查找支出信息，并存储到Tb_Outfamily对象中
-			Tb_Outfamily tbout = outfamaily.find(Integer
+			// 根据编号查找支出信息，并存储到Tb_outaccount对象中
+			Tb_Outfamily tbout = out.find(Integer
 					.parseInt(strid));
 			txtMoney.setText(String.valueOf(tbout.getMoney()));// 显示金额
 			txtTime.setText(tbout.getTime());// 显示时间
-			spType.setText(tbout.getType());// 显示类别
+			spType.setPrompt(tbout.getType());// 显示类别
 			txtHA.setText(tbout.getAddress());// 显示地点
 			txtMark.setText(tbout.getMark());// 显示备注
 		} else if (strType.equals("btnininfo"))// 如果类型是btnininfo
 		{
 			tvtitle.setText("收入管理");// 设置标题为“收入管理”
 			textView.setText("付款方：");// 设置“地点/付款方”标签文本为“付款方：”
-			// 根据编号查找收入信息，并存储到Tb_Infamily对象中
-			Tb_Infamily tbin = Infamaily.find(Integer
+			// 根据编号查找收入信息，并存储到Tb_outaccount对象中
+			Tb_Infamily tbin = in.find(Integer
 					.parseInt(strid));
 			txtMoney.setText(String.valueOf(tbin.getMoney()));// 显示金额
 			txtTime.setText(tbin.getTime());// 显示时间
-			spType.setText(tbin.getType());// 显示类别
+			spType.setPrompt(tbin.getType());// 显示类别
 			txtHA.setText(tbin.getHandler());// 显示付款方
 			txtMark.setText(tbin.getMark());// 显示备注
 		}
@@ -101,10 +102,10 @@ public class ManageIncome extends Activity {
 					tbOut.setMoney(Double.parseDouble(txtMoney
 							.getText().toString()));// 设置金额
 					tbOut.setTime(txtTime.getText().toString());// 设置时间
-					tbOut.setType(spType.getText().toString());// 设置类别
+					tbOut.setType(spType.getSelectedItem().toString());// 设置类别
 					tbOut.setAddress(txtHA.getText().toString());// 设置地点
 					tbOut.setMark(txtMark.getText().toString());// 设置备注
-					outfamaily.update(tbOut);// 更新支出信息
+					out.update(tbOut);// 更新支出信息
 				} else if (strType.equals("btnininfo"))// 判断类型如果是btnininfo
 				{
 					Tb_Infamily tbIn = new Tb_Infamily();// 创建Tb_inaccount对象
@@ -112,10 +113,10 @@ public class ManageIncome extends Activity {
 					tbIn.setMoney(Double.parseDouble(txtMoney.getText()
 							.toString()));// 设置金额
 					tbIn.setTime(txtTime.getText().toString());// 设置时间
-					tbIn.setType(spType.getText().toString());// 设置类别
+					tbIn.setType(spType.getSelectedItem().toString());// 设置类别
 					tbIn.setHandler(txtHA.getText().toString());// 设置付款方
 					tbIn.setMark(txtMark.getText().toString());// 设置备注
-					Infamaily.update(tbIn);// 更新收入信息
+					in.update(tbIn);// 更新收入信息
 				}
 				// 弹出信息提示
 				Toast.makeText(ManageIncome.this, "数据修改成功！", Toast.LENGTH_SHORT)
@@ -129,12 +130,12 @@ public class ManageIncome extends Activity {
 				// TODO Auto-generated method stub
 				if (strType.equals("btnoutinfo"))// 判断类型如果是btnoutinfo
 				{
-					outfamaily.detele(Integer.parseInt(strid));// 根据编号删除支出信息
+					out.detele(Integer.parseInt(strid));// 根据编号删除支出信息
 				} else if (strType.equals("btnininfo"))// 判断类型如果是btnininfo
 				{
-					Infamaily.detele(Integer.parseInt(strid));// 根据编号删除收入信息
+					in.detele(Integer.parseInt(strid));// 根据编号删除收入信息
 				}
-				Toast.makeText(ManageIncome.this, "数据删除成功！", Toast.LENGTH_SHORT)
+				Toast.makeText(ManageIncome.this, "〖数据〗删除成功！", Toast.LENGTH_SHORT)
 						.show();
 			}
 		});

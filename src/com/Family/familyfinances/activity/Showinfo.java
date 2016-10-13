@@ -69,13 +69,13 @@ public class Showinfo extends Activity {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
-				String strInfo = String.valueOf(((TextView) view).getText());// 记录单击的项信息
-				String strid = strInfo.substring(0, strInfo.indexOf('|'));// 从项信息中截取编号
-				Intent intent = null;// 创建Intent对象
-				if (strType == "btnoutinfo" | strType == "btnininfo") {// 判断如果是支出或者收入信息
+				String strInfo = String.valueOf(((TextView) view).getText());
+				String strid = strInfo.substring(0, strInfo.indexOf('|'));
+				Intent intent = null;
+				if (strType == "btnoutinfo" | strType == "btnininfo") {
 					intent = new Intent();
-					intent.setAction("Xinxgl");
-					startActivity(intent);
+					intent.setAction("Zhicgl");
+					intent.putExtra(FLAG, new String[] { strid, strType });
 					// 使用manage_income窗口初始化Intent对象
 					intent.putExtra(FLAG, new String[] { strid, strType });// 设置要传递的数据
 				} else if (strType == "btnflaginfo") {// 判断如果是便签信息
@@ -95,7 +95,7 @@ public class Showinfo extends Activity {
 		switch (intType) {// 以intType为条件进行判断
 		case R.id.btnoutinfo:// 如果是btnoutinfo按钮
 			strType = "btnoutinfo";// 为strType变量赋值
-			OutfamilyDAO outfamilyDAO = new OutfamilyDAO(Showinfo.this);// 创建OutfamilyDAO对象
+			OutfamilyDAO outfamilyDAO = new OutfamilyDAO(Showinfo.this);
 			// 获取所有支出信息，并存储到List泛型集合中
 			List<Tb_Outfamily> listoutinfos = outfamilyDAO.getScrollData(0,
 					(int) outfamilyDAO.getCount());
@@ -103,16 +103,17 @@ public class Showinfo extends Activity {
 			int i = 0;// 定义一个开始标识
 			for (Tb_Outfamily tb_outfamily : listoutinfos) {// 遍历List泛型集合
 				// 将支出相关信息组合成一个字符串，存储到字符串数组的相应位置
-				strInfos[i] = tb_outfamily.getid() + "|"
-						+ tb_outfamily.getType() + " "
+				strInfos[i] = tb_outfamily.getid() + "|    "
+						+ tb_outfamily.getType() + "    "
 						+ String.valueOf(tb_outfamily.getMoney()) + "元     "
-						+ tb_outfamily.getTime();
+						+ tb_outfamily.getTime() + "    "
+						+ tb_outfamily.getMark();
 				i++;// 标识加1
 			}
 			break;
 		case R.id.btnininfo:// 如果是btnininfo按钮
 			strType = "btnininfo";// 为strType变量赋值
-			InfamilyDAO infamilydao = new InfamilyDAO(Showinfo.this);// 创建InaccountDAO对象
+			InfamilyDAO infamilydao = new InfamilyDAO(Showinfo.this);
 			// 获取所有收入信息，并存储到List泛型集合中
 			List<Tb_Infamily> listinfos = infamilydao.getScrollData(0,
 					(int) infamilydao.getCount());
@@ -120,10 +121,11 @@ public class Showinfo extends Activity {
 			int m = 0;// 定义一个开始标识
 			for (Tb_Infamily tb_infamily : listinfos) {// 遍历List泛型集合
 				// 将收入相关信息组合成一个字符串，存储到字符串数组的相应位置
-				strInfos[m] = tb_infamily.getid() + "|"
-						+ tb_infamily.getType() + " "
+				strInfos[m] = tb_infamily.getid() + "|    "
+						+ tb_infamily.getType() + "    "
 						+ String.valueOf(tb_infamily.getMoney()) + "元     "
-						+ tb_infamily.getTime();
+						+ tb_infamily.getTime() + "    "
+						+ tb_infamily.getHandler();
 				m++;// 标识加1
 			}
 			break;

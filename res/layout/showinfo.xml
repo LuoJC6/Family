@@ -39,44 +39,6 @@
 			/>
 		</RelativeLayout>
 		</LinearLayout>
-		<LinearLayout 
-		    android:layout_height="wrap_content" 
-			android:layout_width="match_parent"
-			android:orientation="horizontal" 
-			android:layout_weight="0.06">
-		    <TextView 
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:text="序号"
-            style="@style/text_color_size_2"
-            android:layout_gravity="top"
-            android:paddingLeft="20px"
-            />
-		    <TextView 
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:text="类别"
-            style="@style/text_color_size_2"
-            android:layout_gravity="top"
-            android:paddingLeft="20px"
-            />
-		    <TextView 
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:text="金额"
-            style="@style/text_color_size_2"
-            android:layout_gravity="top"
-            android:paddingLeft="20px"
-            />
-		    <TextView 
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:text="时间"
-            style="@style/text_color_size_2"
-            android:layout_gravity="top"
-            android:paddingLeft="20px"
-            />
-		</LinearLayout>
 		<LinearLayout android:id="@+id/linearLayout2"
 			android:layout_height="wrap_content" 
 			android:layout_width="match_parent"
