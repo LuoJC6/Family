@@ -5,13 +5,12 @@
     android:layout_height="fill_parent"
     android:orientation="vertical"
     android:showDividers="middle"
-    android:divider="@drawable/ic_item"
-    android:background="@drawable/bj1">
+    android:divider="@drawable/ic_item">
 
 <Button android:id="@+id/btnXinZZC"
         android:layout_width="fill_parent"
         android:layout_height="60dp"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:gravity="center_vertical"
         android:layout_marginLeft="10dp"
         android:background="@null"
@@ -20,7 +19,7 @@
 <Button android:id="@+id/btnXinZSR"
         android:layout_width="fill_parent"
         android:layout_height="60dp"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:gravity="center_vertical"
         android:layout_marginLeft="10dp"
         android:background="@null"
@@ -29,7 +28,7 @@
 <Button android:id="@+id/btnXinZBQ"
         android:layout_width="fill_parent"
         android:layout_height="60dp"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:gravity="center_vertical"
         android:layout_marginLeft="10dp"
         android:background="@null"
@@ -38,7 +37,7 @@
 <Button android:id="@+id/btnWoDZC"
         android:layout_width="fill_parent"
         android:layout_height="60dp"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:gravity="center_vertical"
         android:layout_marginLeft="10dp"
         android:background="@null"
@@ -47,7 +46,7 @@
 <Button android:id="@+id/btnWoDSR"
         android:layout_width="fill_parent"
         android:layout_height="60dp"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:gravity="center_vertical"
         android:layout_marginLeft="10dp"
         android:background="@null"
@@ -56,7 +55,7 @@
 <Button android:id="@+id/btnWoDBQ"
         android:layout_width="fill_parent"
         android:layout_height="60dp"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:gravity="center_vertical"
         android:layout_marginLeft="10dp"
         android:background="@null"
@@ -65,7 +64,7 @@
 <Button android:id="@+id/btnShuJGL"
         android:layout_width="fill_parent"
         android:layout_height="60dp"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:gravity="center_vertical"
         android:layout_marginLeft="10dp"
         android:background="@null"
@@ -73,7 +72,7 @@
         android:text="数据管理"/>
 <View  
    android:layout_width="fill_parent"  
-    android:layout_height="1px" 
+    android:layout_height="2px" 
    android:background="?android:attr/listDivider"  
 /> 
 

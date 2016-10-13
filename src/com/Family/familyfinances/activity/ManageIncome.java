@@ -84,6 +84,7 @@ public class ManageIncome extends Activity {
 		}
 
 		txtTime.setOnClickListener(new OnClickListener() {// 为时间文本框设置单击监听事件
+			@SuppressWarnings("deprecation")
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
@@ -121,6 +122,7 @@ public class ManageIncome extends Activity {
 				// 弹出信息提示
 				Toast.makeText(ManageIncome.this, "数据修改成功！", Toast.LENGTH_SHORT)
 						.show();
+				finish();
 			}
 		});
 
@@ -135,8 +137,9 @@ public class ManageIncome extends Activity {
 				{
 					in.detele(Integer.parseInt(strid));// 根据编号删除收入信息
 				}
-				Toast.makeText(ManageIncome.this, "〖数据〗删除成功！", Toast.LENGTH_SHORT)
+				Toast.makeText(ManageIncome.this, "数据删除成功！", Toast.LENGTH_SHORT)
 						.show();
+				finish();
 			}
 		});
 

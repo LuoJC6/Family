@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/incot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+ <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center_horizontal"
+         android:layout_margin="20dp">
+        <TextView
+           
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="25dp"
+            android:textColor="#ff4081"
+            android:textStyle="bold"
+            android:text="设置密码" />
+      </LinearLayout>
+      
+ 
+ 
+      <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        >
+     
+            <EditText android:id="@+id/txtFlag"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+             android:inputType="textPassword"
+              android:hint="请输入密码"
+              android:padding="10dp"
+              android:background="@drawable/family_flag_edittext" />
+  
+      </LinearLayout>
+      
+      
+       <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+          <Button android:id="@+id/btnquxiao"
+              android:layout_width="100dp"
+              android:layout_height="wrap_content" 
+              android:background="@drawable/family_addincome_button"
+              android:textColor="#ffffff"
+              android:layout_marginLeft="40dp"
+              android:text="取消"/>
+          
+          <Button android:id="@+id/btnszpwd"
+              
+              android:layout_width="100dp"
+              android:layout_height="wrap_content" 
+              android:background="@drawable/family_addincome_button"
+              android:textColor="#ffffff"
+              android:layout_marginLeft="80dp"
+              android:text="设置" />
+            
+       
+     </LinearLayout>
+     
+</LinearLayout>

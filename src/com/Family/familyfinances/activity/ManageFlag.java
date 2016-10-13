@@ -43,6 +43,7 @@ public class ManageFlag extends Activity {
 				// 弹出信息提示
 				Toast.makeText(ManageFlag.this, "便签修改成功！",
 						Toast.LENGTH_SHORT).show();
+				finish();
 			}
 		});
 
@@ -53,6 +54,7 @@ public class ManageFlag extends Activity {
 				flagDAO.detele(Integer.parseInt(strid));
 				Toast.makeText(ManageFlag.this, "便签删除成功！",
 						Toast.LENGTH_SHORT).show();
+				finish();
 			}
 		});
 	}

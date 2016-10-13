@@ -54,7 +54,7 @@
 	        android:layout_gravity="right"
 	        android:textColor="#ff0000"
 	        android:textSize="12sp"
-	        android:text="注册>"  
+	        android:text="设置登录密码>"  
 	        />
      <Button 
          	android:layout_width="wrap_content"
