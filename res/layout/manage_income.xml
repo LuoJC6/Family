@@ -87,7 +87,7 @@
 		    <TextView android:layout_width="90dp" 
 		    android:id="@+id/tvInOut" 
 		    android:textSize="20sp" 
-		    android:text="付款方：" 
+		    android:text="地点：" 
 		    android:layout_height="wrap_content" 
 		    android:layout_alignBaseline="@+id/txtInOut" 
 		    android:layout_alignBottom="@+id/txtInOut" 

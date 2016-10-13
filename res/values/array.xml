@@ -4,5 +4,12 @@
         <item >工资</item>
         <item >股票</item>
         <item >理财</item>
+        <item >其他</item>
+    </string-array>
+        <string-array name="paytype">
+        <item >餐饮</item>
+        <item >生活用品</item>
+        <item >学习</item>
+        <item >其他</item>
     </string-array>
 </resources>

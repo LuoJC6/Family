@@ -41,6 +41,7 @@ public class Familyflag extends Activity {
 							Toast.makeText(Familyflag.this, "请输入便签！！",
 									Toast.LENGTH_SHORT).show();
 						}
+						finish();
 					}
 				});
 

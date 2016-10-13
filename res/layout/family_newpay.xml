@@ -76,9 +76,12 @@
               android:gravity="center"
               android:textColor="#ffffff"
                android:text="类别" />
-    <EditText android:id="@+id/type"
-              android:layout_width="250dp"
-                android:layout_height="wrap_content"/>
+    <Spinner android:id="@+id/paytype"
+		    android:layout_width="250dp"
+		    android:layout_height="wrap_content"
+		    android:entries="@array/paytype"
+		    android:textColor="#000000"
+		    />
     </LinearLayout>
 
   <LinearLayout 
@@ -94,7 +97,7 @@
               android:gravity="center"
                android:textSize="20sp"
                android:textColor="#ffffff"
-               android:text="来源"/>
+               android:text="地点"/>
     <EditText android:id="@+id/address"
               android:layout_width="250dp"
               android:layout_height="wrap_content" 

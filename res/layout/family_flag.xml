@@ -1,72 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/itemflag"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="@drawable/bj1"
+     android:id="@+id/incot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical" >
-    <LinearLayout 
-        android:orientation="vertical"
+ <LinearLayout 
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_weight="3">
+        android:layout_height="40dp"
+        android:gravity="center_horizontal"
+         android:layout_margin="20dp">
         <TextView
+           
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center_horizontal"
-            android:textSize="35sp"
-            android:textColor="#000000"
+            android:layout_height="50dp"
+            android:textSize="25dp"
+            android:textColor="#ff4081"
             android:textStyle="bold"
             android:text="新增便签" />
       </LinearLayout>
-      <LinearLayout android:orientation="vertical"
+      
+ 
+ 
+      <LinearLayout 
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_weight="1">
-        <RelativeLayout android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:padding="5dp">
-            <TextView android:id="@+id/tvFlag"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:textColor="#000000"
-                android:textSize="20sp"
-                android:text="请输入标签，最多输入200字"/>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        >
+     
             <EditText android:id="@+id/txtFlag"
-                android:layout_width="350dp"
-                android:layout_height="400dp"
-                android:layout_below="@id/tvFlag"
-                android:gravity="top"
-                android:singleLine="false"
-                />
-        </RelativeLayout>
+              android:layout_width="fill_parent"
+              android:layout_height="200dp"
+              android:gravity="top"
+              android:hint="请输入小于150字的便签"
+              android:padding="10dp"
+              android:background="@drawable/family_flag_edittext" />
+  
       </LinearLayout>
-      <LinearLayout android:orientation="vertical"
-         android:layout_width="fill_parent"
-         android:layout_height="fill_parent" 
-         android:layout_weight="3"
-         >
-
-        <RelativeLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:padding="10dp" >
-
+      
+      
+       <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
           <Button android:id="@+id/btnflagCancel"
-              android:layout_width="80dp"
+              android:layout_width="100dp"
               android:layout_height="wrap_content" 
-              android:layout_alignParentRight="true"
-              android:layout_marginLeft="10dp"
+              android:background="@drawable/family_addincome_button"
+              android:textColor="#ffffff"
+              android:layout_marginLeft="40dp"
               android:text="重置"/>
           
           <Button android:id="@+id/btnflagSave"
-              android:layout_width="80dp"
-              android:layout_height="wrap_content"
-              android:layout_toLeftOf="@id/btnflagCancel"
+              
+              android:layout_width="100dp"
+              android:layout_height="wrap_content" 
+              android:background="@drawable/family_addincome_button"
+              android:textColor="#ffffff"
+              android:layout_marginLeft="80dp"
               android:text="保存" />
             
-        </RelativeLayout>
+       
      </LinearLayout>
 </LinearLayout>

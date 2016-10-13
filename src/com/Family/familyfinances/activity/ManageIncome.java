@@ -60,7 +60,7 @@ public class ManageIncome extends Activity {
 		if (strType.equals("btnoutinfo"))// 如果类型是btnoutinfo
 		{
 			tvtitle.setText("支出管理");// 设置标题为“支出管理”
-			textView.setText("地  点：");// 设置“地点/付款方”标签文本为“地 点：”
+			textView.setText("地  点：");// 设置地 点
 			// 根据编号查找支出信息，并存储到Tb_outaccount对象中
 			Tb_Outfamily tbout = out.find(Integer
 					.parseInt(strid));
@@ -72,7 +72,7 @@ public class ManageIncome extends Activity {
 		} else if (strType.equals("btnininfo"))// 如果类型是btnininfo
 		{
 			tvtitle.setText("收入管理");// 设置标题为“收入管理”
-			textView.setText("付款方：");// 设置“地点/付款方”标签文本为“付款方：”
+			textView.setText("来源：");// 设置“地点/付款方”标签文本为“付款方：”
 			// 根据编号查找收入信息，并存储到Tb_outaccount对象中
 			Tb_Infamily tbin = in.find(Integer
 					.parseInt(strid));
@@ -115,7 +115,7 @@ public class ManageIncome extends Activity {
 							.toString()));// 设置金额
 					tbIn.setTime(txtTime.getText().toString());// 设置时间
 					tbIn.setType(spType.getSelectedItem().toString());// 设置类别
-					tbIn.setHandler(txtHA.getText().toString());// 设置付款方
+					tbIn.setHandler(txtHA.getText().toString());// 设置地点
 					tbIn.setMark(txtMark.getText().toString());// 设置备注
 					in.update(tbIn);// 更新收入信息
 				}
