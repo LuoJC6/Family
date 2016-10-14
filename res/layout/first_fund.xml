@@ -1,0 +1,253 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kakaka.MainActivity" >
+
+		<TableRow android:id="@+id/TR1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content">
+		    
+		    <TextView android:id="@+id/tv1"
+		        android:layout_width="50dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="收益率"
+		        android:gravity="center"/>
+		    <TextView android:id="@+id/tv2"
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="存取时间"
+		        android:gravity="center"/>
+		    <TextView android:id="@+id/tv3"
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="起购金额"
+		        android:gravity="center"/>
+		    <TextView android:id="@+id/tv4"
+		        android:layout_width="80dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="备注"
+		        android:gravity="center"/>
+		    <TextView android:id="@+id/tv5"
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="状态"
+		        android:gravity="center"/>
+		</TableRow>
+		<TableRow android:id="@+id/TR2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content">
+		    
+		    <TextView android:id="@+id/tv6"
+		        android:layout_width="50dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="3.93%"
+		        android:gravity="center"/>
+		    <TextView android:id="@+id/tv7"
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="随时存取"
+		        android:gravity="center"/>
+		    <TextView android:id="@+id/tv8"
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="1元起购"
+		        android:gravity="center"/>
+		    <TextView android:id="@+id/tv9"
+		        android:layout_width="80dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="天天盈"
+		        android:gravity="center"/>
+		    <Button android:id="@+id/btn2"
+		        android:layout_width="50dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="20px"
+		        android:text="立即抢购"
+		        android:gravity="center"/>
+		</TableRow>
+		<TableRow android:id="@+id/TR3"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content">
+		    
+		    <TextView 
+		        android:layout_width="50dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="4.23%"
+		        android:gravity="center"/>
+		    <TextView 
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="30天"
+		        android:gravity="center"/>
+		    <TextView
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="1000元起购"
+		        android:gravity="center"/>
+		    <TextView 
+		        android:layout_width="80dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="京弘月灵活（保险理财）"
+		        android:gravity="center"/>
+		    <Button 
+		        android:layout_width="50dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="20px"
+		        android:text="立即抢购"
+		        android:gravity="center"/>
+		</TableRow>
+		<TableRow 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content">
+		    
+		    <TextView 
+		        android:layout_width="50dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="2.55%"
+		        android:gravity="center"/>
+		    <TextView 
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="30天"
+		        android:gravity="center"/>
+		    <TextView 
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="100起购"
+		        android:gravity="center"/>
+		    <TextView 
+		        android:layout_width="80dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="京穗月月盈65号理财计划"
+		        android:gravity="center"/>
+		    <Button 
+		        android:layout_width="50dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="20px"
+		        android:text="立即抢购"
+		        android:gravity="center"/>
+		</TableRow>
+		<TableRow 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content">
+		    
+		    <TextView 
+		        android:layout_width="50dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="2.65%"
+		        android:gravity="center"/>
+		    <TextView 
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="90天"
+		        android:gravity="center"/>
+		    <TextView 
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="2000起购"
+		        android:gravity="center"/>
+		    <TextView 
+		        android:layout_width="80dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="京东小金库"
+		        android:gravity="center"/>
+		    <Button 
+		        android:layout_width="50dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="20px"
+		        android:text="立即抢购"
+		        android:gravity="center"/>
+		</TableRow>
+		<TableRow 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content">
+		    
+		    <TextView 
+		        android:layout_width="50dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="3.87%"
+		        android:gravity="center"/>
+		    <TextView 
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="60天"
+		        android:gravity="center"/>
+		    <TextView 
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="1000元起购"
+		        android:gravity="center"/>
+		    <TextView 
+		        android:layout_width="80dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="天天盈"
+		        android:gravity="center"/>
+		    <Button 
+		        android:layout_width="50dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="20px"
+		        android:text="立即抢购"
+		        android:gravity="center"/>
+		</TableRow>
+		<TableRow 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content">
+		    
+		    <TextView 
+		        android:layout_width="50dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="4.12%"
+		        android:gravity="center"/>
+		    <TextView 
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="30天"
+		        android:gravity="center"/>
+		    <TextView 
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="2000元起购"
+		        android:gravity="center"/>
+		    <TextView 
+		        android:layout_width="80dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="京弘月灵活（保险理财）"
+		        android:gravity="center"/>
+		    <Button 
+		        android:layout_width="50dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="20px"
+		        android:text="立即抢购"
+		        android:gravity="center"/>
+		</TableRow>
+
+</TableLayout>

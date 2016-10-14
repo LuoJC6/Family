@@ -95,25 +95,28 @@
             android:gravity="center"
             android:orientation="horizontal" >
             <Button 
+                    android:id="@+id/btn1"
 		            android:layout_width="90dp"
 			        android:layout_height="wrap_content"
 			        android:layout_marginLeft="10dp"
-			        android:text="简单易学"
+			        android:text="货币基金"
 			        android:textSize="14sp"
 			        android:layout_gravity="left"
 			        android:background="@drawable/btn_background"
 			        android:textColor="#ffc0cb"/>
             <Button 
+                    android:id="@+id/btn2"
 		            android:layout_width="90dp"
 			        android:layout_height="wrap_content"
 			        android:layout_marginLeft="10dp"
-			        android:text="随买随记"
+			        android:text="保险理财"
 			        android:textSize="14sp"
 			        android:layout_gravity="center"
 			        android:background="@drawable/btn_background"
 			        android:textColor="#ffc0cb"/>
             <Button 
 		            android:layout_width="90dp"
+		            android:id="@+id/btn3"
 			        android:layout_height="wrap_content"
 			        android:layout_marginLeft="10dp"
 			        android:layout_gravity="right"

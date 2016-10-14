@@ -30,6 +30,30 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".First_one"
+            android:label="@string/name2" >
+            <intent-filter>
+                <action android:name="one" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".First_two"
+            android:label="@string/name2" >
+            <intent-filter>
+                <action android:name="two" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".First_three"
+            android:label="@string/name2" >
+            <intent-filter>
+                <action android:name="three" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".PwdFind"
             android:label="@string/zhmm" >
             <intent-filter>

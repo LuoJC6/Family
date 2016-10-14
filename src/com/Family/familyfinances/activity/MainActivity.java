@@ -29,6 +29,7 @@ public class MainActivity extends Activity {
    
 	private TabHost tabHost;
 	private RadioGroup radiogroup;
+	Button btn1,btn2,btn3;
 	private RadioButton ShouY,GeRYY,GeRSZ;
 	private Button btnXinZZC,btnXinZSR,btnXinZBQ,btnWoDZC,btnWoDSR,btnWoDBQ,btnShuJGL;
 	@Override
@@ -137,6 +138,37 @@ public class MainActivity extends Activity {
 				startActivity(intent);
  		}
  	});
+        btn1=(Button)this.findViewById(R.id.btn1);
+        btn1.setOnClickListener(new View.OnClickListener(){
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent=new Intent();
+				intent.setAction("one");
+				startActivity(intent);
+			}
+			});
+        btn2=(Button)this.findViewById(R.id.btn2);
+        btn2.setOnClickListener(new View.OnClickListener(){
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent=new Intent();
+				intent.setAction("two");
+				startActivity(intent);
+			}
+			});
+        btn3=(Button)this.findViewById(R.id.btn3);
+        btn3.setOnClickListener(new View.OnClickListener(){
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent=new Intent();
+				intent.setAction("three");
+				startActivity(intent);
+			}
+			});
+        
         /**
          * 退出系统
          * */

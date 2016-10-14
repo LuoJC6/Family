@@ -1,0 +1,241 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kakaka.MainActivity" >
+
+		<TableRow android:id="@+id/TR1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content">
+		    
+		    <TextView android:id="@+id/tv1"
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="名称"
+		        android:gravity="center"/>
+		    <TextView android:id="@+id/tv2"
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="保障机构"
+		        android:gravity="center"/>
+		    <TextView android:id="@+id/tv3"
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="项目期限"
+		        android:gravity="center"/>
+		    <TextView android:id="@+id/tv4"
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="起投金额"
+		        android:gravity="center"/>
+		    <TextView android:id="@+id/tv5"
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="状态"
+		        android:gravity="center"/>
+		</TableRow>
+		<TableRow android:id="@+id/TR2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content">
+		    
+		    <TextView android:id="@+id/tv6"
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="新手试投产品"/>
+		    <TextView android:id="@+id/tv7"
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="香江控股有限公司"/>
+		    <TextView android:id="@+id/tv8"
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="1个自然日"
+		        android:gravity="center"/>
+		    <TextView android:id="@+id/tv9"
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="2000元"
+		        android:gravity="center"/>
+		    <Button android:id="@+id/btn2"
+		        android:layout_width="50dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="20px"
+		        android:text="立即加入"
+		        android:gravity="center"/>
+		</TableRow>
+				<TableRow android:id="@+id/TR3"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content">
+		    
+		    <TextView 
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="新三板股权投资合约"/>
+		    <TextView 
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="Finance One公司"/>
+		    <TextView
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="4个自然日"
+		        android:gravity="center"/>
+		    <TextView 
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="2000元"
+		        android:gravity="center"/>
+		    <Button 
+		        android:layout_width="50dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="20px"
+		        android:text="立即加入"
+		        android:gravity="center"/>
+		</TableRow>
+				<TableRow 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content">
+		    
+		    <TextView 
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="道·琼斯期货交易项目"/>
+		    <TextView 
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="拉赫兰顿保理有限公司"/>
+		    <TextView 
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="7个自然日"
+		        android:gravity="center"/>
+		    <TextView 
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="5000元"
+		        android:gravity="center"/>
+		    <Button 
+		        android:layout_width="50dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="20px"
+		        android:text="立即加入"
+		        android:gravity="center"/>
+		</TableRow>
+		<TableRow 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content">
+		    
+		    <TextView 
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="韩国KOSPI指数期货"/>
+		    <TextView 
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="拉赫兰顿保理有限公司"/>
+		    <TextView 
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="5个自然日"
+		        android:gravity="center"/>
+		    <TextView 
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="8000元"
+		        android:gravity="center"/>
+		    <Button 
+		        android:layout_width="50dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="20px"
+		        android:text="立即加入"
+		        android:gravity="center"/>
+		</TableRow>
+		<TableRow 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content">
+		    
+		    <TextView 
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="韩国KOSPI指数期货"/>
+		    <TextView 
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="迅捷商业保理有限公司"/>
+		    <TextView 
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="5个自然日"
+		        android:gravity="center"/>
+		    <TextView 
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="8000元"
+		        android:gravity="center"/>
+		    <Button 
+		        android:layout_width="50dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="20px"
+		        android:text="立即加入"
+		        android:gravity="center"/>
+		</TableRow>
+		<TableRow 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content">
+		    
+		    <TextView 
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="石油沥青期货合约产品"/>
+		    <TextView 
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="荣联国际保理有限公司"/>
+		    <TextView 
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="30个自然日"
+		        android:gravity="center"/>
+		    <TextView 
+		        android:layout_width="65dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="24px"
+		        android:text="10000元"
+		        android:gravity="center"/>
+		    <Button 
+		        android:layout_width="50dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="20px"
+		        android:text="立即加入"
+		        android:gravity="center"/>
+		</TableRow>
+
+</TableLayout>
