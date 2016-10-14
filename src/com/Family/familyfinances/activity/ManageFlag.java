@@ -41,8 +41,9 @@ public class ManageFlag extends Activity {
 				tb_flag.setFlag(txtFlag.getText().toString());// 设置便签值
 				flagDAO.update(tb_flag);// 修改便签信息
 				// 弹出信息提示
-				Toast.makeText(ManageFlag.this, "便签修改成功！",
-						Toast.LENGTH_SHORT).show();
+				Toast.makeText(ManageFlag.this, "便签修改成功！",Toast.LENGTH_SHORT)
+				.show();
+				
 				finish();
 			}
 		});

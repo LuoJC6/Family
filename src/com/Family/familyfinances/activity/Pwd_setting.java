@@ -22,7 +22,7 @@ public class Pwd_setting extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.mimasz);// 设置布局文件
 
-		txtpwd = (EditText) findViewById(R.id.txtPwd);// 获取密码文本框
+		txtpwd = (EditText) findViewById(R.id.txtFlag);// 获取密码文本框
 		btnsetting = (Button) findViewById(R.id.btnszpwd);// 获取设置按钮
 		btnqux = (Button) findViewById(R.id.btnquxiao);// 获取取消按钮
 
@@ -38,8 +38,9 @@ public class Pwd_setting extends Activity {
 					pwdDAO.update(tb_pwd);// 修改用户密码
 				}
 				// 弹出信息提示
-				Toast.makeText(Pwd_setting.this, "密码设置成功！", Toast.LENGTH_SHORT)
+				Toast.makeText(Pwd_setting.this, "密码修改成功！", Toast.LENGTH_SHORT)
 						.show();
+				txtpwd.setText("");
 			}
 		});
 

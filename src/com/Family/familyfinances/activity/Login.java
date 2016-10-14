@@ -37,14 +37,16 @@ public class Login extends Activity {
 				if ((pwdDAO.getCount() == 0 || pwdDAO.find().getPassword()
 						.isEmpty())
 						&& txtpwd.getText().toString().isEmpty()) {
-					Toast.makeText(Login.this, "登录成功！！！",
-							Toast.LENGTH_SHORT).show();
 					startActivity(intent);// 启动主Activity
+					Toast.makeText(Login.this, "无密码登录成功！！",
+							Toast.LENGTH_LONG).show();
 				} else {
 					// 判断输入的密码是否与数据库中的密码一致
 					if (pwdDAO.find().getPassword()
 							.equals(txtpwd.getText().toString())) {
 						startActivity(intent);// 启动主Activity
+						Toast.makeText(Login.this, "登录成功！！",
+								Toast.LENGTH_LONG).show();
 					} else {
 						// 弹出信息提示
 						Toast.makeText(Login.this, "请输入正确的登录密码！",
