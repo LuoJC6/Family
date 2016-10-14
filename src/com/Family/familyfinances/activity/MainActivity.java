@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
    
 	private TabHost tabHost;
 	private RadioGroup radiogroup;
-	Button btn1,btn2,btn3;
+	Button btn1,btn2,btn3,btnPwd,btnofwe;
 	private RadioButton ShouY,GeRYY,GeRSZ;
 	private Button btnXinZZC,btnXinZSR,btnXinZBQ,btnWoDZC,btnWoDSR,btnWoDBQ,btnShuJGL;
 	@Override
@@ -39,7 +39,7 @@ public class MainActivity extends Activity {
         
         tabHost = (TabHost)findViewById(android.R.id.tabhost);
         tabHost.setup();
-        final EditText txtlogin = (EditText)findViewById(R.id.txtLogin);
+//        final EditText txtlogin = (EditText)findViewById(R.id.txtLogin);
         
         radiogroup = (RadioGroup)findViewById(R.id.radiogroup);
         ShouY = (RadioButton)findViewById(R.id.ShouY);
@@ -168,7 +168,27 @@ public class MainActivity extends Activity {
 				startActivity(intent);
 			}
 			});
+        btnPwd=(Button)this.findViewById(R.id.btnPwdsetting);
+        btnPwd.setOnClickListener(new View.OnClickListener(){
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent=new Intent();
+				intent.setAction("Pwd");
+				startActivity(intent);
+			}
+			});
         
+        btnofwe=(Button)this.findViewById(R.id.btnOfwe);
+        btnofwe.setOnClickListener(new View.OnClickListener(){
+
+			@Override
+			public void onClick(View arg0) {
+				Intent intent=new Intent();
+				intent.setAction("Ofwe");
+				startActivity(intent);
+			}
+			});
         /**
          * 退出系统
          * */
@@ -184,7 +204,6 @@ public class MainActivity extends Activity {
  				intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
  				startActivity(intent);
  				System.exit(0);
- 				txtlogin.setText("");
  			
  		}
  	});

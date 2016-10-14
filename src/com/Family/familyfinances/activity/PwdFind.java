@@ -21,7 +21,6 @@ public class PwdFind extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.mimasz);
 
-		txtname = (EditText) findViewById(R.id.txtName);
 		txtpwd = (EditText) findViewById(R.id.txtPwd);
 		btnOK = (Button) findViewById(R.id.btnok);
 
@@ -30,7 +29,7 @@ public class PwdFind extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				UserDAO pwdDAO = new UserDAO(PwdFind.this);
-				Tb_user tb_pwd = new Tb_user(txtpwd.getText().toString(),txtname.getText().toString());
+				Tb_user tb_pwd = new Tb_user(txtpwd.getText().toString());
 				if (pwdDAO.getCount() == 0) {
 					pwdDAO.add(tb_pwd);
 				} else {

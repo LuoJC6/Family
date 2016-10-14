@@ -31,7 +31,7 @@
         </activity>
         <activity
             android:name=".First_one"
-            android:label="@string/name2" >
+            android:label="@string/a1" >
             <intent-filter>
                 <action android:name="one" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -39,7 +39,7 @@
         </activity>
         <activity
             android:name=".First_two"
-            android:label="@string/name2" >
+            android:label="@string/a2" >
             <intent-filter>
                 <action android:name="two" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -47,9 +47,17 @@
         </activity>
         <activity
             android:name=".First_three"
-            android:label="@string/name2" >
+            android:label="@string/a3" >
             <intent-filter>
                 <action android:name="three" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".verion_info"
+            android:label="@string/ofwe" >
+            <intent-filter>
+                <action android:name="Ofwe" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -66,6 +74,14 @@
             android:label="@string/name10" >
             <intent-filter>
                 <action android:name="shujgl" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Pwd_setting"
+            android:label="@string/mm" >
+            <intent-filter>
+                <action android:name="Pwd" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>

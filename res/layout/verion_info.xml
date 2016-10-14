@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40px"
+        android:text="i理财(Android)6.8.1.211" 
+        android:gravity="center"
+        android:textStyle="bold"/>
+    <View  
+        android:layout_width="fill_parent"  
+    	android:layout_height="2px" 
+   		android:background="?android:attr/listDivider" /> 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@style/text_color_size_3"
+        android:text="    理财通适用于Android版的大部分机型，如在其他手机系统上使用本软件，对于出现的任何问题，本公司不承担任何责任，本软件由罗建成组小组开发，非经授权开发并正式发布的其他任何由本软件衍生的软件均为非法，下载、安装、使用此类软件，将可能导致不可预知的风险，由此产生的一切法律责任与纠纷一概与本公司无关。" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@style/text_color_size_3"
+        android:text="     用户不得利用本软件发表、传送、储存 违反国家法律、危害国家安全、祖国统一、社会稳定的内容；不得制造虚假身份误导、欺骗或利用本软件传播虚假信息。否则，本公司将有权终止此用户的使用。" />
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@style/text_color_size_3"
+		android:text="客服电话：(0870-6513769)"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <View  
+        android:layout_width="fill_parent"  
+    	android:layout_height="2px" 
+   		android:background="?android:attr/listDivider" /> 
+    	<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:textSize="28dp"
+        	android:text="版权所有" 
+        	android:textStyle="bold"/>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@style/text_color_size_3"
+		android:text="Copyright © 2016-2020 i理财" />
+	<View  
+		android:layout_width="fill_parent"  
+		android:layout_height="2px" 
+		android:background="?android:attr/listDivider" />
+</LinearLayout>

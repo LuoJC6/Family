@@ -31,7 +31,7 @@ public class dbOpenHelper extends SQLiteOpenHelper {
 		db.execSQL("create table tb_Infamily (_id integer primary key,money decimal,time varchar(10),"
 				+ "type varchar(10),handler varchar(100),mark varchar(200))");
 		// 创建用户表
-		db.execSQL("create table tb_user (name varchar(50),password varchar(20))");
+		db.execSQL("create table tb_user (password varchar(20))");
 		// 创建便签信息表
 		db.execSQL("create table tb_flag (_id integer primary key,flag varchar(200))");
 	}

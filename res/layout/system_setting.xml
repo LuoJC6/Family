@@ -31,14 +31,14 @@
 	            <TextView 
 	                android:layout_width="wrap_content"
 		            android:layout_height="wrap_content"
-		            android:text="国际大熊猫123456"
+		            android:text="家庭理财通123456"
 		            style="@style/text_color_size_1"
 		            android:layout_gravity="top"
 	                />
 	            <TextView 
 	                android:layout_width="wrap_content"
 		            android:layout_height="wrap_content"
-		            android:text="如果你无法用简洁的语言表达你的想法，那只能说明你还不够了解它。"
+		            android:text="随着中国市场化改革的不断深入，如何理财成为家庭生活中必须考虑的一项重要内容。"
 		            android:layout_gravity="bottom"
 	                />
 	            </LinearLayout>
@@ -48,7 +48,7 @@
 		android:layout_height="2px" 
 		android:background="#ff0000"  
 					/>
-    <Button android:id="@+id/btnQingC"
+    <Button android:id="@+id/btnPwdsetting"
         android:layout_width="fill_parent"
         android:layout_height="40dp"
         android:textSize="20sp"
@@ -56,7 +56,7 @@
         android:layout_marginLeft="10dp"
         android:background="@null"
         android:drawableRight="@drawable/tb"
-        android:text="清除缓存"/>
+        android:text="密码设置"/>
     <View  
 		android:layout_width="fill_parent"  
 		android:layout_height="2px" 

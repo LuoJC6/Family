@@ -13,10 +13,6 @@
      android:orientation="vertical"
      android:layout_gravity="center"
     android:gravity="center">
-    <EditText android:id="@+id/txtName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="用户名／手机号"/>
     
     <EditText android:id="@+id/txtPwd"
         android:layout_width="match_parent"
@@ -29,6 +25,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/txtPwd"
         android:background="@drawable/login_button_selector"
-        android:text="注册"/>
+        android:text="设置"/>
 </LinearLayout>
 </LinearLayout>
