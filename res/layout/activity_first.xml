@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/beij"
+  
     android:id="@+id/first" >
 
     <FrameLayout
@@ -87,6 +87,7 @@
             style="@style/text_color_size"
             android:layout_gravity="top"
             android:paddingLeft="70dp"
+            android:layout_marginTop="10dp"
             />
         <LinearLayout 
             android:layout_width="match_parent"
@@ -102,8 +103,8 @@
 			        android:text="货币基金"
 			        android:textSize="14sp"
 			        android:layout_gravity="left"
-			        android:background="@drawable/btn_background"
-			        android:textColor="#ffc0cb"/>
+			        android:background="@drawable/family_addincome_button"
+			        android:textColor="#ffffff"/>
             <Button 
                     android:id="@+id/btn2"
 		            android:layout_width="90dp"
@@ -112,8 +113,8 @@
 			        android:text="保险理财"
 			        android:textSize="14sp"
 			        android:layout_gravity="center"
-			        android:background="@drawable/btn_background"
-			        android:textColor="#ffc0cb"/>
+			        android:background="@drawable/family_addincome_button"
+			        android:textColor="#ffffff"/>
             <Button 
 		            android:layout_width="90dp"
 		            android:id="@+id/btn3"
@@ -122,8 +123,8 @@
 			        android:layout_gravity="right"
 			        android:text="个人理财"
 			        android:textSize="14sp"
-			        android:background="@drawable/btn_background"
-			        android:textColor="#ffc0cb"/>
+			        android:background="@drawable/family_addincome_button"
+			        android:textColor="#ffffff"/>
         </LinearLayout>
         <View  
 		   android:layout_width="fill_parent"  
@@ -145,101 +146,108 @@
             <LinearLayout 
             android:layout_width="match_parent"
             android:layout_height="60dip"
-            android:gravity="center"
-            android:orientation="horizontal">	 	            
+          >	 	            
             <ImageView 
 		            android:src="@drawable/aa"    
-		            android:layout_height="60dp"
-		            android:layout_width="80dp"
+		            android:layout_height="80dp"
+	               android:layout_width="100dp"
 		            android:paddingTop="10dp"
+		            android:layout_marginLeft="10dp"
+		            
+
 	                />
 	            <LinearLayout 
 	                android:layout_width="wrap_content"
 	                android:layout_height="wrap_content"
-	                android:layout_marginTop="3dip"
-	                android:orientation="vertical">
+	                android:layout_marginTop="10dip"
+	                android:orientation="vertical"
+	                android:layout_marginLeft="100dp">
 	            <TextView 
 	                android:layout_width="wrap_content"
 		            android:layout_height="wrap_content"
 		            android:text="工资理财"
 		            style="@style/text_color_size"
-		            android:layout_gravity="top"
-		            android:paddingLeft="100dp"
+		            
 	                />
 	            <TextView 
 	                android:layout_width="wrap_content"
 		            android:layout_height="wrap_content"
 		            android:text="记录每个月工资"
-		            android:layout_gravity="bottom"
-		            android:paddingLeft="90dp"
+		             android:gravity="center"
+		           
 	                />
 	            </LinearLayout>
 	            </LinearLayout>
 	            <LinearLayout 
 			            android:layout_width="match_parent"
 			            android:layout_height="60dip"
-			            android:gravity="center"
-			            android:orientation="horizontal">
+			           >
 	            <ImageView 
 	            android:src="@drawable/bb"    
-	            android:layout_height="60dp"
-	            android:layout_width="80dp"
+	           android:layout_height="80dp"
+	            android:layout_width="100dp"
 	            android:paddingTop="10dp"
+	            android:layout_marginLeft="10dp"
+	            
                 />
 	            <LinearLayout 
 	                android:layout_width="wrap_content"
 	                android:layout_height="wrap_content"
-	                android:layout_marginTop="3dip"
-	                android:orientation="vertical">
+	                android:layout_marginTop="10dip"
+	                android:orientation="vertical"
+	                android:layout_marginLeft="100dp">
 	            <TextView 
 	                android:layout_width="wrap_content"
 		            android:layout_height="wrap_content"
 		            android:text="生活理财"
 		            style="@style/text_color_size"
-		            android:layout_gravity="top"
-		            android:paddingLeft="100dp"
+		          
 	                />
 	            <TextView 
 	                android:layout_width="wrap_content"
 		            android:layout_height="wrap_content"
 		            android:text="记录生活的点滴"
-		            android:layout_gravity="bottom"
-		            android:paddingLeft="90dp"
+		             android:gravity="center"
+		            
 	                />
 	            </LinearLayout>
 	            </LinearLayout>>
 	            <LinearLayout 
 			            android:layout_width="match_parent"
 			            android:layout_height="60dip"
-			            android:gravity="center"
-			            android:orientation="horizontal">
+			            >
 	            <ImageView 
 	            android:src="@drawable/cc"    
-	            android:layout_height="60dp"
-	            android:layout_width="80dp"
+	            android:layout_height="80dp"
+	            android:layout_width="100dp"
 	            android:paddingTop="10dp"
+	            android:layout_marginLeft="10dp"
+	            
                 />
 	            <LinearLayout 
 	                android:layout_width="wrap_content"
 	                android:layout_height="wrap_content"
-	                android:layout_marginTop="3dip"
-	                android:orientation="vertical">
+	                android:layout_marginTop="10dip"
+	                android:orientation="vertical"
+	                android:layout_marginLeft="100dp"
+	                 >
 	            <TextView 
 	                android:layout_width="wrap_content"
 		            android:layout_height="wrap_content"
 		            android:text="数据管理"
 		            style="@style/text_color_size"
-		            android:layout_gravity="top"
-		            android:paddingLeft="100dp"
+		           
 	                />
 	            <TextView 
 	                android:layout_width="wrap_content"
 		            android:layout_height="wrap_content"
 		            android:text="管理收入和支出"
-		            android:layout_gravity="bottom"
-		            android:paddingLeft="90dp"
+		             android:gravity="center"
+		            
+		           
 	                />
 	            </LinearLayout>
+
 	            </LinearLayout>
         </LinearLayout>
     </FrameLayout>

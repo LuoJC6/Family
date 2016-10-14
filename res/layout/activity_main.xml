@@ -28,25 +28,28 @@
         	android:layout_height="wrap_content"
           	android:paddingTop="8dp"   
        		android:orientation="horizontal"
-       		android:background="@drawable/bgcolor">
+       		android:background="#ff4081">
 	    <RadioButton 
           	android:id="@+id/ShouY"
           	android:checked="true"   
           	android:drawableTop="@drawable/main"    
           	android:text="首页"
+          	android:textColor="#ffffff"
           	style="@style/tab_button_bg"/>
         
 		<RadioButton 
            	android:id="@+id/GeRYY"   
           	android:drawableTop="@drawable/info"
           	style="@style/tab_button_bg"
-          	android:text="个人应用"/>
+          	android:text="个人应用"
+          	android:textColor="#ffffff"/>
          
 		<RadioButton 
           	android:id="@+id/GeRSZ"    
           	android:drawableTop="@drawable/set"
           	style="@style/tab_button_bg"
-          	android:text="系统设置"/>
+          	android:text="系统设置"
+          	android:textColor="#ffffff"/>
           
 		</RadioGroup>
 	</LinearLayout>

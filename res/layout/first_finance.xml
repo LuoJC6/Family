@@ -2,11 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.kakaka.MainActivity" >
+    tools:context="com.example.kakaka.MainActivity" 
+     android:layout_marginLeft="10dp"
+    >
 
 		<TableRow android:id="@+id/TR1"
 		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content">
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="20dp" >
 		    
 		    <TextView android:id="@+id/tv1"
 		        android:layout_width="65dp"
@@ -40,8 +43,10 @@
 		        android:gravity="center"/>
 		</TableRow>
 		<TableRow android:id="@+id/TR2"
+		     android:layout_marginTop="20dp"
 		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content">
+		    android:layout_height="wrap_content"
+		   >
 		    
 		    <TextView android:id="@+id/tv6"
 		        android:layout_width="65dp"
@@ -67,14 +72,16 @@
 		        android:gravity="center"/>
 		    <Button android:id="@+id/btn2"
 		        android:layout_width="50dp"
-		        android:layout_height="wrap_content"
+		        android:layout_height="30dp"
 		        android:textSize="20px"
 		        android:text="立即加入"
-		        android:gravity="center"/>
+		        android:gravity="center"
+		        android:background="@drawable/family_addincome_button"/>
 		</TableRow>
-				<TableRow android:id="@+id/TR3"
+		<TableRow android:id="@+id/TR3"
 		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content">
+		    android:layout_height="wrap_content"
+		     android:layout_marginTop="20dp">
 		    
 		    <TextView 
 		        android:layout_width="65dp"
@@ -100,12 +107,13 @@
 		        android:gravity="center"/>
 		    <Button 
 		        android:layout_width="50dp"
-		        android:layout_height="wrap_content"
+		        android:layout_height="30dp"
 		        android:textSize="20px"
 		        android:text="立即加入"
-		        android:gravity="center"/>
+		        android:gravity="center"
+		         android:background="@drawable/family_addincome_button"/>
 		</TableRow>
-				<TableRow 
+				<TableRow  android:layout_marginTop="20dp"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content">
 		    
@@ -133,12 +141,13 @@
 		        android:gravity="center"/>
 		    <Button 
 		        android:layout_width="50dp"
-		        android:layout_height="wrap_content"
+		        android:layout_height="30dp"
 		        android:textSize="20px"
 		        android:text="立即加入"
-		        android:gravity="center"/>
+		        android:gravity="center"
+		         android:background="@drawable/family_addincome_button"/>
 		</TableRow>
-		<TableRow 
+		<TableRow  android:layout_marginTop="20dp"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content">
 		    
@@ -166,12 +175,13 @@
 		        android:gravity="center"/>
 		    <Button 
 		        android:layout_width="50dp"
-		        android:layout_height="wrap_content"
+		        android:layout_height="30dp"
 		        android:textSize="20px"
 		        android:text="立即加入"
-		        android:gravity="center"/>
+		        android:gravity="center"
+		         android:background="@drawable/family_addincome_button"/>
 		</TableRow>
-		<TableRow 
+		<TableRow  android:layout_marginTop="20dp"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content">
 		    
@@ -199,14 +209,16 @@
 		        android:gravity="center"/>
 		    <Button 
 		        android:layout_width="50dp"
-		        android:layout_height="wrap_content"
+		        android:layout_height="30dp"
 		        android:textSize="20px"
 		        android:text="立即加入"
-		        android:gravity="center"/>
+		        android:gravity="center"
+		         android:background="@drawable/family_addincome_button"/>
 		</TableRow>
 		<TableRow 
 		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content">
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="20dp">
 		    
 		    <TextView 
 		        android:layout_width="65dp"
@@ -232,10 +244,11 @@
 		        android:gravity="center"/>
 		    <Button 
 		        android:layout_width="50dp"
-		        android:layout_height="wrap_content"
+		        android:layout_height="30dp"
 		        android:textSize="20px"
 		        android:text="立即加入"
-		        android:gravity="center"/>
+		        android:gravity="center"
+		         android:background="@drawable/family_addincome_button"/>
 		</TableRow>
 
 </TableLayout>

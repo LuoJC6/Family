@@ -9,7 +9,8 @@
         android:layout_height="40dp"
         android:gravity="center_horizontal"
          android:layout_margin="20dp">
-        <TextView 
+        <TextView
+           
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:textSize="25dp"
@@ -17,12 +18,16 @@
             android:textStyle="bold"
             android:text="便签管理" />
       </LinearLayout>
+      
+ 
+ 
       <LinearLayout 
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_margin="10dp"
         >
+     
             <EditText android:id="@+id/txtFlagManage"
               android:layout_width="fill_parent"
               android:layout_height="200dp"
@@ -30,7 +35,13 @@
               android:hint="请输入便签"
               android:padding="10dp"
               android:background="@drawable/family_flag_edittext" />
-      </LinearLayout>	
+  
+      </LinearLayout>
+	
+	
+	
+	
+	
 	 <LinearLayout 
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

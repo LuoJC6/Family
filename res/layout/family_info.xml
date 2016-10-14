@@ -22,7 +22,7 @@
                 android:layout_height="wrap_content" 
                 android:gravity="center"
                 android:textSize="20dp"
-                android:textColor="#ff0000"
+               
                 android:text="收入列表"/>
 
        </RelativeLayout>

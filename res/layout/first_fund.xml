@@ -2,11 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.kakaka.MainActivity" >
+    tools:context="com.example.kakaka.MainActivity" 
+    android:layout_marginLeft="10dp">
 
 		<TableRow android:id="@+id/TR1"
+		  
 		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content">
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="20dp">
 		    
 		    <TextView android:id="@+id/tv1"
 		        android:layout_width="50dp"
@@ -40,6 +43,7 @@
 		        android:gravity="center"/>
 		</TableRow>
 		<TableRow android:id="@+id/TR2"
+		    android:layout_marginTop="10dp"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content">
 		    
@@ -67,14 +71,16 @@
 		        android:textSize="24px"
 		        android:text="天天盈"
 		        android:gravity="center"/>
-		    <Button android:id="@+id/btn2"
+		    <Button 
 		        android:layout_width="50dp"
-		        android:layout_height="wrap_content"
+		        android:layout_height="30dp"
 		        android:textSize="20px"
-		        android:text="立即抢购"
-		        android:gravity="center"/>
+		        android:text="立即加入"
+		        android:gravity="center"
+		         android:background="@drawable/family_addincome_button"/>
 		</TableRow>
 		<TableRow android:id="@+id/TR3"
+		    android:layout_marginTop="20dp"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content">
 		    
@@ -102,14 +108,15 @@
 		        android:textSize="24px"
 		        android:text="京弘月灵活（保险理财）"
 		        android:gravity="center"/>
-		    <Button 
+		   <Button 
 		        android:layout_width="50dp"
-		        android:layout_height="wrap_content"
+		        android:layout_height="30dp"
 		        android:textSize="20px"
-		        android:text="立即抢购"
-		        android:gravity="center"/>
+		        android:text="立即加入"
+		        android:gravity="center"
+		         android:background="@drawable/family_addincome_button"/>
 		</TableRow>
-		<TableRow 
+		<TableRow android:layout_marginTop="10dp"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content">
 		    
@@ -137,14 +144,15 @@
 		        android:textSize="24px"
 		        android:text="京穗月月盈65号理财计划"
 		        android:gravity="center"/>
-		    <Button 
+		   <Button 
 		        android:layout_width="50dp"
-		        android:layout_height="wrap_content"
+		        android:layout_height="30dp"
 		        android:textSize="20px"
-		        android:text="立即抢购"
-		        android:gravity="center"/>
+		        android:text="立即加入"
+		        android:gravity="center"
+		         android:background="@drawable/family_addincome_button"/>
 		</TableRow>
-		<TableRow 
+		<TableRow android:layout_marginTop="10dp"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content">
 		    
@@ -172,14 +180,15 @@
 		        android:textSize="24px"
 		        android:text="京东小金库"
 		        android:gravity="center"/>
-		    <Button 
+		   <Button 
 		        android:layout_width="50dp"
-		        android:layout_height="wrap_content"
+		        android:layout_height="30dp"
 		        android:textSize="20px"
-		        android:text="立即抢购"
-		        android:gravity="center"/>
+		        android:text="立即加入"
+		        android:gravity="center"
+		         android:background="@drawable/family_addincome_button"/>
 		</TableRow>
-		<TableRow 
+		<TableRow android:layout_marginTop="10dp"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content">
 		    
@@ -207,14 +216,15 @@
 		        android:textSize="24px"
 		        android:text="天天盈"
 		        android:gravity="center"/>
-		    <Button 
+		   <Button 
 		        android:layout_width="50dp"
-		        android:layout_height="wrap_content"
+		        android:layout_height="30dp"
 		        android:textSize="20px"
-		        android:text="立即抢购"
-		        android:gravity="center"/>
+		        android:text="立即加入"
+		        android:gravity="center"
+		         android:background="@drawable/family_addincome_button"/>
 		</TableRow>
-		<TableRow 
+		<TableRow android:layout_marginTop="10dp"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content">
 		    
@@ -242,12 +252,13 @@
 		        android:textSize="24px"
 		        android:text="京弘月灵活（保险理财）"
 		        android:gravity="center"/>
-		    <Button 
+		   <Button 
 		        android:layout_width="50dp"
-		        android:layout_height="wrap_content"
+		        android:layout_height="30dp"
 		        android:textSize="20px"
-		        android:text="立即抢购"
-		        android:gravity="center"/>
+		        android:text="立即加入"
+		        android:gravity="center"
+		         android:background="@drawable/family_addincome_button"/>
 		</TableRow>
 
 </TableLayout>

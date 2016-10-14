@@ -51,7 +51,7 @@
               android:background="@drawable/family_addincome_button"
               android:textColor="#ffffff"
               android:layout_marginLeft="40dp"
-              android:text="重新登录"/>
+              android:text="取消"/>
           
           <Button android:id="@+id/btnszpwd"
               
