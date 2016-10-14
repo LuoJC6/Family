@@ -28,8 +28,8 @@ public final class R {
         public static final int c=0x7f02000a;
         public static final int cc=0x7f02000b;
         public static final int circle=0x7f02000c;
-        public static final int clr_normal=0x7f02001d;
-        public static final int clr_pressed=0x7f02001e;
+        public static final int clr_normal=0x7f020020;
+        public static final int clr_pressed=0x7f020021;
         public static final int d=0x7f02000d;
         public static final int dot_focused=0x7f02000e;
         public static final int dot_normal=0x7f02000f;
@@ -40,12 +40,15 @@ public final class R {
         public static final int ic_item=0x7f020014;
         public static final int ic_launcher=0x7f020015;
         public static final int info=0x7f020016;
-        public static final int login_button_selector=0x7f020017;
-        public static final int main=0x7f020018;
-        public static final int set=0x7f020019;
-        public static final int setting=0x7f02001a;
-        public static final int tb=0x7f02001b;
-        public static final int tx=0x7f02001c;
+        public static final int login_button=0x7f020017;
+        public static final int login_button_selector=0x7f020018;
+        public static final int login_ico=0x7f020019;
+        public static final int login_ico1=0x7f02001a;
+        public static final int main=0x7f02001b;
+        public static final int set=0x7f02001c;
+        public static final int setting=0x7f02001d;
+        public static final int tb=0x7f02001e;
+        public static final int tx=0x7f02001f;
     }
     public static final class id {
         public static final int GeRSZ=0x7f080016;

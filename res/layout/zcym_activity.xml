@@ -4,7 +4,6 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:layout_gravity="center"
-    android:background="@drawable/beij"
     android:gravity="center"
     android:orientation="horizontal">
   <LinearLayout 
@@ -18,13 +17,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
-        android:hint="请输入6位以上的密码"/>
+        android:background="@null"
+         android:drawableLeft="@drawable/login_ico1" 
+        android:drawablePadding="10dp" 
+        android:layout_marginTop="20dp"
+        android:hint="请输入密码"/>
+     <View      
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#bbbbbb"
+        android:layout_marginTop="10dp"
+        />
     
-    <Button android:id="@+id/btnNewLogin"
+    <Button 
+        android:id="@+id/btnNewLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/txtPwd"
-        android:background="@drawable/login_button_selector"
-        android:text="设置"/>
+       android:textColor="#ffffff"
+       android:layout_marginTop="40dp"
+        android:background="@drawable/login_button"
+        android:text="设置密码"/>
 </LinearLayout>
 </LinearLayout>
